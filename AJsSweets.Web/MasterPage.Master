@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TelerikWebSite1.MasterPage" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AJs Sweets</title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+    
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+
+    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+
+    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
+    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
+        <div id="wrapper">
+        <telerik:RadPageLayout runat="server" ID="MasterLayout" GridType="Fluid">
+            <Rows>
+                <%--Header--%>
+                <telerik:LayoutRow CssClass="header">
+                    <Columns>
+                        <%--Logo--%>
+                        <telerik:LayoutColumn Span="2" SpanMd="3" SpanSm="12" SpanXs="12">
+                            <a href="#" class="logo">
+                                <img src="images/ajslogo.png" alt="site logo" />
+                            </a>
+                        </telerik:LayoutColumn>
+
+                        <%--Main Nav--%>
+                        <telerik:LayoutColumn Span="10" SpanMd="9" SpanSm="12" SpanXs="12">
+                            <telerik:RadMenu ID="RadMenu1" runat="server" RenderMode="Auto">
+                                <Items>
+                                    <telerik:RadMenuItem Text="Home" NavigateUrl="Default.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />
+                                    <telerik:RadMenuItem Text="Orders" NavigateUrl="Grid.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />
+                                    <telerik:RadMenuItem Text="Inventory" NavigateUrl="ListView.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />
+                                    <telerik:RadMenuItem Text="Reports" NavigateUrl="ProfitReport.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />                 
+                                    <telerik:RadMenuItem Text="Contacts" NavigateUrl="Employees.aspx" />
+                                    </Items>
+                                <Items>
+                                    <telerik:RadMenuItem IsSeparator="true" />                 
+                                    <telerik:RadMenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />                 
+                                    <telerik:RadMenuItem Text="Login" NavigateUrl="Login.aspx" />
+                                    <telerik:RadMenuItem IsSeparator="true" />                 
+                                    <telerik:RadMenuItem Text="Sign Up" NavigateUrl="UserRegistration.aspx" />
+                                </Items>
+                            </telerik:RadMenu>
+                        </telerik:LayoutColumn>
+                    </Columns>
+                </telerik:LayoutRow>
+
+                <%--Main--%>
+                <telerik:LayoutRow>
+                    <Columns>
+                       
+
+                        <%--Content--%>
+
+                             
+                        <telerik:CompositeLayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
+                            <Content>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                                    <Content>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </Content>
+                            
+                            </Content>
+                        </telerik:CompositeLayoutColumn>
+                    </Columns>
+                </telerik:LayoutRow>
+                 
+         
+                <%--Footer--%>
+                <telerik:LayoutRow>
+                    <Columns>
+                        <telerik:LayoutColumn CssClass="footer">
+                            <hr />
+                            Footer: © 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080
+                        </telerik:LayoutColumn>
+                    </Columns>
+                </telerik:LayoutRow>
+            </Rows>
+        </telerik:RadPageLayout>
+       </div>
+    </form>
+</body>
+</html>

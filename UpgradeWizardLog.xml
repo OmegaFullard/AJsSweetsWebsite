@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\TelerikWebSite1.csproj" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Customers.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Customers.aspx" />
+  <event action="Analyze" type="Success" name="Customers.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Customers.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Employees.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Employees.aspx" />
+  <event action="Analyze" type="Success" name="Employees.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Employees.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Grid.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Grid.aspx" />
+  <event action="Analyze" type="Success" name="Grid.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Grid.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InventoryMgt.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InventoryMgt.aspx" />
+  <event action="Analyze" type="Success" name="InventoryMgt.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InventoryMgt.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InvoiceDetails.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InvoiceDetails.aspx" />
+  <event action="Analyze" type="Success" name="InvoiceDetails.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\InvoiceDetails.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Invoices.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Invoices.aspx" />
+  <event action="Analyze" type="Success" name="Invoices.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Invoices.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ListView.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ListView.aspx" />
+  <event action="Analyze" type="Success" name="ListView.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ListView.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPage.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPage.Master" />
+  <event action="Analyze" type="Success" name="MasterPage.Master" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPage.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPageSingleMenu.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPageSingleMenu.Master" />
+  <event action="Analyze" type="Success" name="MasterPageSingleMenu.Master" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\MasterPageSingleMenu.Master" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\packages.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ProfitReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ProfitReport.aspx" />
+  <event action="Analyze" type="Success" name="ProfitReport.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\ProfitReport.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Registration.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Registration.aspx" />
+  <event action="Analyze" type="Success" name="Registration.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Registration.aspx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="web.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="web.Debug.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="web.Release.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\web.Release.config" />
+  <event action="Analyze" type="Success" name="TelerikWebSite1" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\TelerikWebSite1.csproj" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Content\GridViewPager.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Content\GridViewPager.ascx" />
+  <event action="Analyze" type="Success" name="GridViewPager.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Content\GridViewPager.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default.ascx" />
+  <event action="Analyze" type="Success" name="Default.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Default_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Default_Insert.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\EntityTemplates\Default_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Boolean.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Boolean_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children.ascx" />
+  <event action="Analyze" type="Success" name="Children.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Children_Insert.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Children_Insert.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime.ascx" />
+  <event action="Analyze" type="Success" name="DateTime.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+  <event action="Analyze" type="Success" name="DateTime_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Decimal_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress.ascx" />
+  <event action="Analyze" type="Success" name="EmailAddress.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress_Edit.ascx" />
+  <event action="Analyze" type="Success" name="EmailAddress_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\EmailAddress_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Enumeration.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Enumeration_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="ForeignKey.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+  <event action="Analyze" type="Success" name="ForeignKey_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Integer_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Integer_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Integer_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Integer_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany.ascx" />
+  <event action="Analyze" type="Success" name="ManyToMany.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany_Edit.ascx" />
+  <event action="Analyze" type="Success" name="ManyToMany_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\ManyToMany_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+  <event action="Analyze" type="Success" name="MultilineText_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text.ascx" />
+  <event action="Analyze" type="Success" name="Text.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Text_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Text_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url.ascx" />
+  <event action="Analyze" type="Success" name="Url.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Url_Edit.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\FieldTemplates\Url_Edit.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Boolean.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Boolean.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Enumeration.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\Enumeration.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="ForeignKey.ascx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\Filters\ForeignKey.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Details.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Details.aspx" />
+  <event action="Analyze" type="Success" name="Details.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Details.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Edit.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Edit.aspx" />
+  <event action="Analyze" type="Success" name="Edit.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Edit.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Insert.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Insert.aspx" />
+  <event action="Analyze" type="Success" name="Insert.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\Insert.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\List.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\List.aspx" />
+  <event action="Analyze" type="Success" name="List.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\List.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\ListDetails.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\ListDetails.aspx" />
+  <event action="Analyze" type="Success" name="ListDetails.aspx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\PageTemplates\ListDetails.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="web.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\DynamicData\web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\packages.config" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Site.master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Site.master" />
+  <event action="Analyze" type="Success" name="Site.master" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Site.master" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="web.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="C:\...\Telerik.Data\" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\Telerik.Data" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Profits.resx" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\Profits.resx" />
+  <event action="Analyze" type="Success" name="ReportLibrary" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="TelerikProject" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikProject.sln" />
+  <event action="Backup" type="Success" name="TelerikWebSite1" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\TelerikWebSite1.csproj" />
+  <event action="Backup" type="Success" name="ReportLibrary" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\TelerikWebSite1.csproj" />
+  <event action="Upgrade" type="Success" name="TelerikWebSite1" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\TelerikWebSite1.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="ReportLibrary" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="TelerikProject" path="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikProject.sln" />
+</log>
