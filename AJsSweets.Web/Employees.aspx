@@ -115,7 +115,9 @@
         </telerik:RadDataForm>
 
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>" SelectCommand="SELECT * FROM [Employees]"></asp:SqlDataSource>
-
+        <br />
+        <br />
+        <a href="Default.aspx"><< Back to Home</a><br />
     </div>
     </form>
 </body>

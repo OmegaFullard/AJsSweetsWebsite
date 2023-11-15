@@ -5,7 +5,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
 
-    <div class="container">
+    <div class="container-fluid">
+
       <div class="row">
          <div class="col-md-5">
             <div class="card">
@@ -35,7 +36,9 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                              <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" />
+                             
+                    
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
                            </div>
                         </div>
                      </div>
@@ -47,18 +50,29 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-4">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
-                     </div>
+                     <div class="col-8 mx-auto">
+                           <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
+                         <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #d1e0e0; border: medium solid #C0C0C0" Text="Add" />
+                     
+                              
+                     
+                  
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #e0dee3; border: medium solid #C0C0C0" Text="Update" />
+                    
+                    
+                 
+                          
+                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="150px" Height="25px" style="color: #ffffff; background-color: #4800ff; border: medium solid #C0C0C0" Text="Delete" />
+                     
+                         </telerik:CardActionsContainerComponent>
+                        
+                         </div>
                   </div>
                </div>
             </div>
+                  </div>
+                  </div>
             <a href="Default.aspx"><< Back to Home</a><br />
             <br/>
          </div>
@@ -68,7 +82,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Publisher List</h4>
+                           <h4>Invoice List</h4>
                         </center>
                      </div>
                   </div>
@@ -85,6 +99,5 @@
                </div>
             </div>
          </div>
-      </div>
-   </div>
+   
 </asp:Content>
