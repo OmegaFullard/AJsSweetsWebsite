@@ -39,27 +39,7 @@
 
                         <%--Main Nav--%>
                         <telerik:LayoutColumn Span="10" SpanMd="9" SpanSm="12" SpanXs="12">
-                            <telerik:RadMenu ID="RadMenu1" runat="server" RenderMode="Auto">
-                                <Items>
-                                    <telerik:RadMenuItem Text="Home" NavigateUrl="Default.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />
-                                    <telerik:RadMenuItem Text="Orders" NavigateUrl="Grid.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />
-                                    <telerik:RadMenuItem Text="Inventory" NavigateUrl="ListView.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />
-                                    <telerik:RadMenuItem Text="Reports" NavigateUrl="ProfitReport.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />                 
-                                    <telerik:RadMenuItem Text="Contacts" NavigateUrl="Employees.aspx" />
-                                    </Items>
-                                <Items>
-                                    <telerik:RadMenuItem IsSeparator="true" />                 
-                                    <telerik:RadMenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />                 
-                                    <telerik:RadMenuItem Text="Login" NavigateUrl="Login.aspx" />
-                                    <telerik:RadMenuItem IsSeparator="true" />                 
-                                    <telerik:RadMenuItem Text="Sign Up" NavigateUrl="UserRegistration.aspx" />
-                                </Items>
-                            </telerik:RadMenu>
+                        
                         </telerik:LayoutColumn>
                     </Columns>
                 </telerik:LayoutRow>
