@@ -15,6 +15,8 @@
                      <div class="col">
                         <center>
                            <h4>Customer Details</h4>
+                            <span>Account Status - </span>
+                            <asp:Label CssClass="badge badge-pill badge-info" ID="Label1" runat="server" Text="Label"></asp:Label>
                         </center>
                      </div>
                   </div>
@@ -29,16 +31,28 @@
                      <div class="col">
                         <hr/>
                      </div>
-                  </div>
+                 
                   <div class="row">
                      <div class="col-md-4">
                         <label>Customer ID</label>
-                        <div class="form-group">
-                           <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                             
-                    
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
+  
+                         <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="ID" ReadOnly="True"></asp:TextBox>
+                             </div>
+                         </div>
+                       <div class="col-md-4">
+                             <label>Password</label>
+                             <div class="form-group">
+                                 <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email-ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                             </div>
+                              </div>
+                          </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                      
+                              <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
                            </div>
                         </div>
                      </div>
