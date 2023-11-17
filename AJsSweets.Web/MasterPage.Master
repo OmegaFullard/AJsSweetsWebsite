@@ -6,7 +6,7 @@
 <head runat="server">
     <title>AJs Sweets</title>
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
-    
+     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="styles/base.css" rel="stylesheet" />
     <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
     <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
@@ -38,8 +38,62 @@
                         </telerik:LayoutColumn>
 
                         <%--Main Nav--%>
+
                         <telerik:LayoutColumn Span="10" SpanMd="9" SpanSm="12" SpanXs="12">
-                        
+                        <div class ="topnav">
+
+                            <telerik:RadNavigation ID="Nav1" runat="server" EnableScreenBoundaryDetection="true">
+                                <Nodes>
+                                <telerik:NavigationNode Text="Home">
+                            <Nodes>
+                                <telerik:NavigationNode Text="Home" NavigateUrl="Default.aspx"></telerik:NavigationNode>
+                            </Nodes>
+                        </telerik:NavigationNode>        
+<telerik:NavigationNode Text="Orders" NavigateUrl="Grid.aspx">
+                    <Nodes>
+                        <telerik:NavigationNode Text="Invoices" NavigateUrl="Invoices.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></telerik:NavigationNode>
+                    </Nodes>
+                </telerik:NavigationNode>
+
+<telerik:NavigationNode Text="Inventory" NavigateUrl="ListView.aspx">
+                    <Nodes>
+                        <telerik:NavigationNode Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></telerik:NavigationNode>
+                    </Nodes>
+                </telerik:NavigationNode>
+
+<telerik:NavigationNode Text="Reports">
+                    <Nodes>
+                        <telerik:NavigationNode Text="Profit Report" NavigateUrl="ProfitReport.aspx"></telerik:NavigationNode>
+                    </Nodes>
+                </telerik:NavigationNode>
+
+
+<telerik:NavigationNode Text="Customer Portal">
+                    <Nodes>
+                        <telerik:NavigationNode Text="Customers" NavigateUrl="Customers.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Login" NavigateUrl="Login.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Registration" NavigateUrl="UserRegistration.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="User Profile" NavigateUrl="UserViewProfile.aspx"></telerik:NavigationNode>
+
+                    </Nodes>
+                </telerik:NavigationNode>
+
+<telerik:NavigationNode Text="Admin Portal">
+                    <Nodes>
+                        <telerik:NavigationNode Text="Admin Login" NavigateUrl="AdminLogin.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></telerik:NavigationNode>
+
+                    </Nodes>
+                </telerik:NavigationNode>
+            </Nodes>
+        </telerik:RadNavigation>
+
+                    </div>
+                          
+					   
                         </telerik:LayoutColumn>
                     </Columns>
                 </telerik:LayoutRow>

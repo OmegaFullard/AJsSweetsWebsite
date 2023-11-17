@@ -16,7 +16,8 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <src="images/generaluser.png" />
+                            <img src="images/defaultuser.png" />
+                          
                         </center>
                      </div>
                       <div class="row">
@@ -24,7 +25,7 @@
                         <center>
                            <h4>Customer Details</h4>
                             <span>Account Status - </span>
-                            <asp:Label CssClass="badge badge-pill badge-info" ID="Label1" runat="server" Text="Label"></asp:Label>
+                            <asp:Label CssClass="badge badge-pill badge-info" ID="Label1" runat="server" Text="Active"></asp:Label>
                         </center>
                      </div>
                   </div>
@@ -165,21 +166,17 @@
                                  <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email-ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
                              </div>
                           </div>
-
+                      <br />
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
                       
                               <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
-                           </div>
+                           <br />
+                            </div>
                         </div>
                      </div>
-                     <div class="col-md-8">
-                        <label>Customer Name</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Customer Name"></asp:TextBox>
-                        </div>
-                     </div>
+                     
                   </div>
                   <div class="row">
                      <div class="col-8 mx-auto">

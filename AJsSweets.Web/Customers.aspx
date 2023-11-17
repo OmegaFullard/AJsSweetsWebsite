@@ -23,7 +23,7 @@
     </telerik:RadAjaxManager>
     <div>
 
-        <telerik:RadDataForm ID="RadDataForm1" OnNeedDataSource="RadDataForm1_NeedDataSource" Skin="Glow" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+        <telerik:RadDataForm ID="RadDataForm1" Skin="Glow" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
            <LayoutTemplate>
         <div >
             <div id="itemPlaceholder" runat="server"></div>
