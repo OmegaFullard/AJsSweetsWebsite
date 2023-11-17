@@ -40,7 +40,7 @@
                         <%--Main Nav--%>
 
                         <telerik:LayoutColumn Span="10" SpanMd="9" SpanSm="12" SpanXs="12">
-                        <div class ="topnav">
+                        <div class ="radmenu">
 
                             <telerik:RadNavigation ID="Nav1" runat="server" EnableScreenBoundaryDetection="true">
                                 <Nodes>
