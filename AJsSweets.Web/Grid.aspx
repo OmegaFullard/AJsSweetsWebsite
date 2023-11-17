@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Grid.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
+﻿<%@ Page Title="Orders" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Grid.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
+     <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
 
@@ -9,13 +10,13 @@
             <telerik:LayoutRow>
                 <Columns>
                     <telerik:LayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
-                        <h1>Main Title</h1>
-                        <h2>Sub Title</h2>
+                        <h1>Orders</h1>
+                        <h2>Customer Order Details</h2>
                         <telerik:RadButton runat="server" ID="RadButton0" Text="Submit" ButtonType="SkinnedButton"></telerik:RadButton>
                     </telerik:LayoutColumn>
                     <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
                         
-                        <img src="images/ajssweetsbg.png" width="300" height="300"/>
+                       
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>

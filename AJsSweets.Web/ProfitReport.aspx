@@ -6,7 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Profit Report</title>
     <telerik:RadStyleSheetManager id="RadStyleSheetManager1" runat="server" />
 </head>
 <body>
@@ -26,7 +26,7 @@
     <div>
 
         <telerik:ReportViewer ID="ReportViewer1" runat="server">
-            <ReportSource Identifier="C:\Users\omega.fullard\source\repos\TelerikWebSite1\TelerikWebSite1\Reports\Profits.trdp" IdentifierType="UriReportSource">
+            <ReportSource Identifier="C:\Users\omega.fullard\source\repos\AJsSweetsWebsite\AJsSweets.Web\Reports\Profits.trdp" IdentifierType="UriReportSource">
             </ReportSource>
         </telerik:ReportViewer>
 
