@@ -53,15 +53,15 @@
         <fieldset class="rdfFieldset rdfBorders">
             <div class="rdfRow">
                 <asp:Label runat="server" ID="lblFN" Text="First Name:"></asp:Label>
-                <asp:Label Text='<%# Eval("FirstName") %>' runat="server" ID="lbl2" />
+                <asp:Label Text='<%# Eval("First Name") %>' runat="server" ID="lbl2" />
             </div>
             <div class="rdfRow">
                 <asp:Label runat="server" ID="lblLN" Text="Last Name:"></asp:Label>
-                <asp:Label Text='<%# Eval("LastName") %>' runat="server" ID="lbl4" />
+                <asp:Label Text='<%# Eval("Last Name") %>' runat="server" ID="lbl4" />
             </div>
             <div class="rdfRow">
                 <asp:Label runat="server" ID="lblEmail" Text="Email Address:"></asp:Label>
-                <asp:Label Text='<%# Eval("Email") %>' runat="server" ID="lbl6" />
+                <asp:Label Text='<%# Eval("Email Address") %>' runat="server" ID="lbl6" />
             </div>
             <div class="rdfRow">
                 <asp:Label runat="server" ID="lblPhone" Text="Phone Number:"></asp:Label>
@@ -90,12 +90,11 @@
         </fieldset>
     </ItemTemplate>
         </telerik:RadDataForm>
-
+        <br />
+           <a href="Default.aspx"><< Back to Home</a><br />
     </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>" SelectCommand="SELECT * FROM [Customers] WHERE ([ID] = @ID)">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="RadDataForm1" Name="ID" PropertyName="SelectedValue" Type="Int32" />
-            </SelectParameters>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>" SelectCommand="SELECT * FROM [Customers]">
+          
         </asp:SqlDataSource>
     </form>
 </body>

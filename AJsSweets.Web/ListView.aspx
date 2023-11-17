@@ -1,9 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageSingleMenu.Master" AutoEventWireup="true" CodeBehind="ListView.aspx.cs" Inherits="TelerikWebSite1.ListView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ListView.aspx.cs" Inherits="TelerikWebSite1.ListView" %>
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <script src="scripts/scripts.js"></script>
-    <link href="styles/listView.css" rel="stylesheet" />
+<asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

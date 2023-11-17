@@ -1,20 +1,8 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="UserRegistration.aspx.cs" Inherits="Registration" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
-  
-       <link href="styles/default.css" rel="stylesheet" />
-    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
-
-    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
-
-    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
-
-    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
-    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
 </asp:Content>
-
-
+  
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
      <div class="container-fluid">

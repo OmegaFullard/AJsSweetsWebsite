@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageSingleMenu.Master" AutoEventWireup="true" CodeBehind="Grid.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
-<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <link href="styles/grid.css" rel="stylesheet" />
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Grid.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
+<asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
     <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">
         <Rows>
             <telerik:LayoutRow>
