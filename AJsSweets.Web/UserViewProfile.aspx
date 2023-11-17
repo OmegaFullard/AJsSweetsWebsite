@@ -1,4 +1,4 @@
-﻿<%@ PageTitle="User Profile" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="InvoiceDetails.aspx.cs" Inherits="InvoiceDetails" %>
+﻿<%@ Page Title="User Profile" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="InvoiceDetails.aspx.cs" Inherits="InvoiceDetails" %>
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
       <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
@@ -211,8 +211,15 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Invoice List</h4>
+                           <h4>Invoices List</h4>
+                            </center>
+                         <center>
+                            <img src="images/Invoice.png" />
+                             <br />
+                            <asp:Label CssClass="badge badge-pill badge-info" ID="Label2" runat="server" Text="Invoice Information"></asp:Label>
                         </center>
+                         <br />
+                         <br />
                      </div>
                   </div>
                   <div class="row">
@@ -222,7 +229,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                        <asp:GridView ID="GridView1" runat="server" AlternatingRowStyle-BackColor="#CCCCFF" BackColor="#E6E4E7" BorderColor="#9966FF" BorderStyle="Solid" BorderWidth="2px"></asp:GridView>
                      </div>
                   </div>
                </div>
