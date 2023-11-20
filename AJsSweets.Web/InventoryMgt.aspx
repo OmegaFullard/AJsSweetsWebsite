@@ -4,9 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
    
-   <div class="container-fluid">
+   <div class="container">
       <div class="row">
-         <div class="col-md-5">
+         <div class="col-md-6">
             <div class="card">
                <div class="card-body">
                   <div class="row">
@@ -34,8 +34,8 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-3">
-                        <label>Book ID</label>
+                     <div class="col-md-6">
+                        <label>Customer ID</label>
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Customer ID"></asp:TextBox>
@@ -43,7 +43,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-9">
+                     <div class="col-md-4">
                         <label>Item Name</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Item Name"></asp:TextBox>
@@ -67,7 +67,7 @@
                         <label>Item Details</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="DropDownList2" runat="server">
-                              <asp:ListItem Text="Item 1" Value="Item 1" />  //Value should be table value 
+                              <asp:ListItem Text="Item 1" Value="Item 1" />   
                               <asp:ListItem Text="Item 2" Value="Item 2" />
                            </asp:DropDownList>
                         </div>
@@ -146,22 +146,25 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-4">
-                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
-                     </div>
+                     <div class="col-8 mx-auto">
+                    <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
+                         <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
+                        
+                             <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
+            
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
+                                     
+                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="150px" Height="25px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
+                     
+                         </telerik:CardActionsContainerComponent>
+                        </div>
                   </div>
                </div>
             </div>
             <a href="homepage.aspx"><< Back to Home</a><br/>
             <br/>
          </div>
-         <div class="col-md-7">
+         <div class="col-md-6">
             <div class="card">
                <div class="card-body">
                   <div class="row">
@@ -173,7 +176,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <hr>
+                        <hr/>
                      </div>
                   </div>
                   <div class="row">
