@@ -39,7 +39,7 @@
         
     <telerik:CardActionsContainerComponent runat="server" Orientation="Vertical" CardActionsAlignment="Stretched">
          <telerik:CardSeparatorComponent runat="server">
-        <span class="k-button k-solid k-success" style="color: #2d283d; background-color: #d1e0e0; border: medium solid #C0C0C0">Login</span>
+        <span class="k-button k-solid k-success" style="color: #e0dee3; background-color: #471093; border: medium solid #C0C0C0">Login</span>
   <span class="k-button k-solid k-success" style="color: #66b8d1; background-color: #e0dee3; border: medium solid #C0C0C0"><asp:DynamicHyperLink ID="DynamicHyperLink1" runat="server" NavigateUrl="~/UserRegistration.aspx">Sign Up</asp:DynamicHyperLink></span>
          
                 </telerik:CardSeparatorComponent>

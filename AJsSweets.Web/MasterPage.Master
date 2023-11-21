@@ -55,13 +55,13 @@
                                     
                                     <telerik:NavigationNode Text="Orders">
                                         <Nodes>
-                        <telerik:NavigationNode Text="Orders" NavigateUrl="Grid.aspx"></telerik:NavigationNode>
+                        <telerik:NavigationNode Text="Orders" NavigateUrl="Orders.aspx"></telerik:NavigationNode>
                         <telerik:NavigationNode Text="Invoices" NavigateUrl="Invoices.aspx"></telerik:NavigationNode>
                         <telerik:NavigationNode Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></telerik:NavigationNode>
                     </Nodes>
                 </telerik:NavigationNode>
 
-<telerik:NavigationNode Text="Inventory" NavigateUrl="ListView.aspx">
+<telerik:NavigationNode Text="Inventory" NavigateUrl="Inventory.aspx">
                     <Nodes>
                         <telerik:NavigationNode Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></telerik:NavigationNode>
                     </Nodes>
