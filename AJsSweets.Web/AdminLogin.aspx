@@ -28,7 +28,7 @@
     </telerik:CardBodyComponent>
          
     <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched">
-        <span class="k-button k-solid k-success" style="color: #2d283d; background-color: #d1e0e0; border: medium solid #C0C0C0">Login</span>
+        <span class="k-button k-solid k-success" style="color: #ffffff; background-color: #710193; border: medium solid #C0C0C0">Login</span>
         <telerik:CardSeparatorComponent runat="server" Orientation="Vertical">
         </telerik:CardSeparatorComponent>
     

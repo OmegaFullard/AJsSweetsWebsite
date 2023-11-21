@@ -35,11 +35,12 @@
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <label>Customer ID</label>
+                        <label>Inventory ID</label>
                         <div class="form-group">
                            <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Customer ID"></asp:TextBox>
+                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Inventory ID"></asp:TextBox>
                               <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                               <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
                            </div>
                         </div>
                      </div>

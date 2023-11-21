@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Inventory" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ListView.aspx.cs" Inherits="TelerikWebSite1.ListView" %>
+﻿<%@ Page Title="Inventory" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Inventory.aspx.cs" Inherits="TelerikWebSite1.ListView" %>
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
