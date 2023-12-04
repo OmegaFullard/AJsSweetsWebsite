@@ -13,7 +13,7 @@
                     <telerik:LayoutColumn CssClass="jumbotron">
                         <h1>Welcome to AJ's Sweets</h1>
                         <h2>Place an Order
-                            <telerik:RadButton runat="server" ID="RadButton0" Text="Order Now" ButtonType="SkinnedButton"></telerik:RadButton>
+                            <telerik:RadButton runat="server" ID="RadButton0" Text="Order Now" ButtonType="SkinnedButton" Skin="WebBlue" NavigateUrl="~/Orders.aspx"></telerik:RadButton>
                         </h2>
 
                     </telerik:LayoutColumn>

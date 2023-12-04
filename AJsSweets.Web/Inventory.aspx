@@ -39,7 +39,8 @@
             <div class="listViewItem" onclick="example.imageClicked('<%# Eval("ID") %>')">
                 <asp:Image ImageUrl='<%# Eval("ThumbnailUrl") %>' Width="200px" Height="150px" runat="server" ToolTip="Click to view larger image" />
                 <p>
-                    <asp:Literal runat="server" ID="LabelShortDescription"></asp:Literal></p>
+                    <asp:Literal runat="server" ID="LabelShortDescription"></asp:Literal>
+                </p>
 
             </div>
         </ItemTemplate>

@@ -1,6 +1,8 @@
-﻿<%@ Page Title="Orders" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Orders.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
+﻿
+<%@ Page Title="Orders" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Orders.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
+
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
-     <link href="styles/default.css" rel="stylesheet" />
+    <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
 
@@ -12,11 +14,9 @@
                     <telerik:LayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
                         <h1>Orders</h1>
                         <h2>Customer Order Details</h2>
-                        <telerik:RadButton runat="server" ID="RadButton0" Text="Submit" ButtonType="SkinnedButton"></telerik:RadButton>
+                        <telerik:RadButton runat="server" ID="RadButton0" Text="Submit" ButtonType="SkinnedButton" Skin="WebBlue" Style="position: relative;"></telerik:RadButton>
                     </telerik:LayoutColumn>
                     <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
-                        
-                       
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>
@@ -29,7 +29,6 @@
     <telerik:RadAjaxPanel ID="RadAjaxPanel1" ClientEvents-OnRequestStart="onRequestStart" runat="server" CssClass="grid_wrapper">
         <telerik:RadGrid ID="RadGrid1" runat="server" PageSize="10" PagerStyle-PageButtonCount="5"
             OnNeedDataSource="RadGrid1_NeedDataSource" OnItemCreated="RadGrid1_ItemCreated" OnItemDataBound="RadGrid1_ItemDataBound"
-            
             OnUpdateCommand="RadGrid1_UpdateCommand" OnInsertCommand="RadGrid1_InsertCommand" OnDeleteCommand="RadGrid1_DeleteCommand"
             AllowPaging="True" AllowSorting="true" ShowGroupPanel="true" RenderMode="Auto">
             <GroupingSettings ShowUnGroupButton="true" />

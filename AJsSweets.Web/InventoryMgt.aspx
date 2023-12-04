@@ -151,7 +151,7 @@
                     <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
                          <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
                         
-                             <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
+                             <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" Style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
             
                         <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
                                      
@@ -182,7 +182,22 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="InventoryID" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#D1E0E0">
+                             <Columns>
+                                 <asp:BoundField DataField="Items" HeaderText="Items" SortExpression="Items"></asp:BoundField>
+                                 <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity"></asp:BoundField>
+                                 <asp:BoundField DataField="Purchase Price" HeaderText="Purchase Price" SortExpression="Purchase Price"></asp:BoundField>
+                                 <asp:BoundField DataField="Selling Price" HeaderText="Selling Price" SortExpression="Selling Price"></asp:BoundField>
+                                 <asp:BoundField DataField="Expenses" HeaderText="Expenses" SortExpression="Expenses"></asp:BoundField>
+                                 <asp:BoundField DataField="InventoryID" HeaderText="InventoryID" ReadOnly="True" SortExpression="InventoryID"></asp:BoundField>
+                                 <asp:BoundField DataField="Unit Price" HeaderText="Unit Price" SortExpression="Unit Price"></asp:BoundField>
+                             </Columns>
+                         </asp:GridView>
+                         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AJs_SweetsConnectionString %>' SelectCommand="SELECT * FROM [Inventory] WHERE ([InventoryID] = @InventoryID)">
+                             <SelectParameters>
+                                 <asp:ControlParameter ControlID="TextBox2" PropertyName="Text" Name="InventoryID" Type="String"></asp:ControlParameter>
+                             </SelectParameters>
+                         </asp:SqlDataSource>
                      </div>
                   </div>
                </div>
