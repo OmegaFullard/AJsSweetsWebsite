@@ -101,7 +101,30 @@
 
                         <div class="row">
                             <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="EmployeeID" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="First Name" HeaderText="First Name" SortExpression="First Name"></asp:BoundField>
+                                        <asp:BoundField DataField="Last Name" HeaderText="Last Name" SortExpression="Last Name"></asp:BoundField>
+                                        <asp:BoundField DataField="Email Address" HeaderText="Email Address" SortExpression="Email Address"></asp:BoundField>
+                                        <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone"></asp:BoundField>
+                                        <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address"></asp:BoundField>
+                                        <asp:BoundField DataField="City" HeaderText="City" SortExpression="City"></asp:BoundField>
+                                        <asp:BoundField DataField="State" HeaderText="State" SortExpression="State"></asp:BoundField>
+                                        <asp:BoundField DataField="Zip" HeaderText="Zip" SortExpression="Zip"></asp:BoundField>
+                                        <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" ReadOnly="True" SortExpression="EmployeeID"></asp:BoundField>
+                                        <asp:BoundField DataField="Country" HeaderText="Country" SortExpression="Country"></asp:BoundField>
+                                        <asp:BoundField DataField="Date of Birth" HeaderText="Date of Birth" SortExpression="Date of Birth"></asp:BoundField>
+                                        <asp:BoundField DataField="Start Date" HeaderText="Start Date" SortExpression="Start Date"></asp:BoundField>
+                                        <asp:CheckBoxField DataField="Still Employed" HeaderText="Still Employed" SortExpression="Still Employed"></asp:CheckBoxField>
+                                        <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title"></asp:BoundField>
+                                        <asp:BoundField DataField="Salary" HeaderText="Salary" SortExpression="Salary"></asp:BoundField>
+                                    </Columns>
+                                </asp:GridView>
+                                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AJs_SweetsConnectionString %>' SelectCommand="SELECT * FROM [Employees] WHERE ([EmployeeID] = @EmployeeID)">
+                                    <SelectParameters>
+                                        <asp:ControlParameter ControlID="TextBox1" PropertyName="Text" Name="EmployeeID" Type="String"></asp:ControlParameter>
+                                    </SelectParameters>
+                                </asp:SqlDataSource>
                             </div>
                         </div>
 
