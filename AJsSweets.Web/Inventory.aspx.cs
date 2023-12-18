@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Web.UI.WebControls;
 using Telerik.Web.UI;
 
+
 namespace TelerikWebSite1
 {
     public partial class ListView : System.Web.UI.Page
@@ -28,7 +29,7 @@ namespace TelerikWebSite1
             return new List<Image>() {
             new Image() { ID=1, Name="Combo Box", ImageUrl="~/images/assorted.png", ThumbnailUrl="~/images/Thumbnails/assorted.png", Description="Assortment of tasty treats"},
             new Image() { ID=2, Name="Brownies", ImageUrl="~/images/brownies.png", ThumbnailUrl="~/images/Thumbnails/brownies.png", Description="Our brownies offer a variety of options such as gluten-free, vegan, and with or without walnuts"},
-            new Image() { ID=3, Name="Chocolate Cake", ImageUrl="~/images/choccake.png", ThumbnailUrl="~/images/Thumbnails/choccake.pnt", Description="Chocolate cake with vegan option"},
+            new Image() { ID=3, Name="Chocolate Cake", ImageUrl="~/images/choccake.png", ThumbnailUrl="~/images/Thumbnails/choccake.png", Description="Chocolate cake with vegan option"},
             new Image() { ID=4, Name="Donuts", ImageUrl="~/images/donuts.png", ThumbnailUrl="~/images/Thumbnails/donuts.png", Description="Variety of donut flavors and designs including holiday themed options"},
             new Image() { ID=5, Name="Ginger Bread", ImageUrl="~/images/gingerbreadman.png", ThumbnailUrl="~/images/Thumbnails/gingerbreadman.png", Description="Order gingerbread men or dough to make your own gingerbreadmen or houses"},
             new Image() { ID=6, Name="Pies", ImageUrl="~/images/pies.png", ThumbnailUrl="~/images/Thumbnails/pies.png", Description="Pumpkin, Apple, Cherry, Blueberry, and Sweet Potato Pies"},
@@ -66,15 +67,15 @@ namespace TelerikWebSite1
 
         protected void RadListViewImages_NeedDataSource(object sender, Telerik.Web.UI.RadListViewNeedDataSourceEventArgs e)
         {
-            RadListViewImages.DataSource = Images;
+            //RadListViewImages.DataSource = Images;
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
 
-            RadLightBoxImageDetails.DataSource = Images;
-            RadLightBoxImageDetails.DataBind();
+            //RadLightBoxImageDetails.DataSource = Images;
+           // RadLightBoxImageDetails.DataBind();
         }
 
         protected void RadListViewImages_ItemDataBound(object sender, Telerik.Web.UI.RadListViewItemEventArgs e)
@@ -89,7 +90,7 @@ namespace TelerikWebSite1
         }
         protected void RadListViewArticles_NeedDataSource(object sender, RadListViewNeedDataSourceEventArgs e)
         {
-            RadListViewArticles.DataSource = Articles;
+            //RadListViewArticles.DataSource = Articles;
         }
     }
 }
