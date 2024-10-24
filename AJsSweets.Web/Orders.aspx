@@ -83,6 +83,15 @@
             }
         </script>
     </telerik:RadCodeBlock>
+
+     <br />
+      <br />
+    
+    <center><a class="btn btn-primary" href="checkout.aspx" role="button">Continue to Checkout!</a></center>
+             <br/>
+            <a href="default.aspx"><< Back to Home</a>
+         
+             <br/>
 </asp:Content>
 
 

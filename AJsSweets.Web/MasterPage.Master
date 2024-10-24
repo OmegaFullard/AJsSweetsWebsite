@@ -65,99 +65,89 @@
              </asp:ScriptManager>
        
                 <%--Header--%>
+              <div class="topnav menu">
+            <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
+               <Items>
+              
+ 
+                                <asp:MenuItem Text="Home" NavigateUrl="Default.aspx">
+                            </asp:MenuItem>
+                        
+                                    <asp:MenuItem Text="Orders">
+               
+                        <asp:MenuItem Text="Orders" NavigateUrl="Orders.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Invoices" NavigateUrl="Invoices.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+               
+ <asp:MenuItem Text="Inventory">
+<asp:MenuItem Text="Inventory" NavigateUrl="Inventory.aspx"></asp:MenuItem>
+                   
+                        <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+              
+
+<asp:MenuItem Text="Reports">
+                    
+                        <asp:MenuItem Text="Profit Report" NavigateUrl="ProfitReport.aspx"></asp:MenuItem>
+                    
+                </asp:MenuItem>
+
+
+<asp:MenuItem Text="Customer Portal">
+                  
+                        <asp:MenuItem Text="Customers" NavigateUrl="Customers.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" NavigateUrl="Login.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Registration" NavigateUrl="UserRegistration.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="User Profile" NavigateUrl="UserViewProfile.aspx"></asp:MenuItem>
+
+                    </asp:MenuItem>
              
-                        <div class ="radmenu">
 
-                            <telerik:RadNavigation ID="Nav1" runat="server" EnableScreenBoundaryDetection="true">
-                                <Nodes>
-                                <telerik:NavigationNode Text="Home">
-                            <Nodes>
-                                <telerik:NavigationNode Text="Home" NavigateUrl="Default.aspx"></telerik:NavigationNode>
-                            </Nodes>
-                        </telerik:NavigationNode>  
-                                    
-                                    <telerik:NavigationNode Text="Orders">
-                                        <Nodes>
-                        <telerik:NavigationNode Text="Orders" NavigateUrl="Orders.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Invoices" NavigateUrl="Invoices.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></telerik:NavigationNode>
-                    </Nodes>
-                </telerik:NavigationNode>
+<asp:MenuItem Text="Admin Portal">
+                    
+                        <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></asp:MenuItem>
 
-<telerik:NavigationNode Text="Inventory" NavigateUrl="Inventory.aspx">
-                    <Nodes>
-                        <telerik:NavigationNode Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></telerik:NavigationNode>
-                    </Nodes>
-                </telerik:NavigationNode>
-
-<telerik:NavigationNode Text="Reports">
-                    <Nodes>
-                        <telerik:NavigationNode Text="Profit Report" NavigateUrl="ProfitReport.aspx"></telerik:NavigationNode>
-                    </Nodes>
-                </telerik:NavigationNode>
-
-
-<telerik:NavigationNode Text="Customer Portal">
-                    <Nodes>
-                        <telerik:NavigationNode Text="Customers" NavigateUrl="Customers.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Login" NavigateUrl="Login.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Registration" NavigateUrl="UserRegistration.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="User Profile" NavigateUrl="UserViewProfile.aspx"></telerik:NavigationNode>
-
-                    </Nodes>
-                </telerik:NavigationNode>
-
-<telerik:NavigationNode Text="Admin Portal">
-                    <Nodes>
-                        <telerik:NavigationNode Text="Admin Login" NavigateUrl="AdminLogin.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></telerik:NavigationNode>
-                        <telerik:NavigationNode Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></telerik:NavigationNode>
-
-                    </Nodes>
-                </telerik:NavigationNode>
-            </Nodes>
-        </telerik:RadNavigation>
+              
+                </asp:MenuItem>
+          
+                    <asp:MenuItem Text="About" NavigateUrl="About.aspx"></asp:MenuItem>
+                     <asp:MenuItem Text="Contact Us" NavigateUrl="Contact.aspx"></asp:MenuItem>
+        </Items>
+                </asp:Menu>
 
                     </div>
+     
                           
 					   
+        <div class="container">
+    <!-- Main Content -->
+    <div class="row">
+        <div class="col-md-10 col-sm-12">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+            </div>
+     <br />
 
-                <%--Main--%>
-                <telerik:LayoutRow>
-                    <Columns>
-                       
+   
+  <div class="card-footer text-muted">
+     
 
-                        <%--Content--%>
-
-                             
-                        <telerik:CompositeLayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
-                            <Content>
-                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                                </asp:ContentPlaceHolder>
-                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                                </asp:ContentPlaceHolder>
-                                    <Content>
-                                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-                                </asp:ContentPlaceHolder>
-                            </Content>
-                            
-                            </Content>
-                        </telerik:CompositeLayoutColumn>
-                    </Columns>
-                </telerik:LayoutRow>
-                 
-         
-              <div>
              <center>  <p><strong>Please be sure to follow us on Social Media!</strong></p>
             <br /> 
                   <center><a href="#" class="btn btn-primary">Follow Us!</a>  </center>
                  <br />
-                 </div>
             <div style="height: 66px">
                 <br />
-  <%--Footer--%>
-                <div class="card-footer text-muted">
 
             <!-- Add font awesome icons -->
 <a href="#" class="fa fa-facebook"></a>
@@ -165,9 +155,10 @@
 <a href="#" class="fa fa-linkedin"></a>
 <a href="#" class="fa fa-youtube"></a>
 <a href="#" class="fa fa-instagram"></a>
-    </div>
+
         </div>
 <br />
+
 
     <!-- Footer -->
     <div class="row">
