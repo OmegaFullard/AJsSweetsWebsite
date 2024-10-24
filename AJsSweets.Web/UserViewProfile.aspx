@@ -16,14 +16,14 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                            <img src="images/defaultuser.png" />
+                            <img src="images/account-login-icon.jpg" />
                           
                         </center>
                      </div>
                       <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Customer Details</h4>
+                           <h4>Account Details</h4>
                             <span>Account Status - </span>
                             <asp:Label CssClass="badge badge-pill badge-info" ID="Label1" runat="server" Text="Active"></asp:Label>
                         </center>
