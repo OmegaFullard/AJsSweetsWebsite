@@ -11,7 +11,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
 <link rel="manifest" href="/site.webmanifest"/>
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
-<meta name="msapplication-TileColor" content="#da532c"/>
+
+<meta name="msapplication-TileColor" content="#854bd1"/>
 <meta name="theme-color" content="#ffffff"/>
     <title>AJs Sweets</title>
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -29,30 +30,42 @@
 
     <script src="http://localhost:64954/Scripts/popper.min.js"></script>
     <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
-
+     <link href="App_Themes/Page.css" rel="stylesheet" />
+    <link href="App_Themes/dropdowns.css" rel="stylesheet" />
+    <link href="App_Themes/headers.css" rel="stylesheet" />
+    <link href="App_Themes/modals.css" rel="stylesheet" />
+    <link href="App_Themes/pricing.css" rel="stylesheet" />
+    <link href="App_Themes/sign-in.css" rel="stylesheet" />
+   
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
 </head>
+
 <body>
     <form id="form1" runat="server">
-        <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
-        <div id="wrapper">
-        <telerik:RadPageLayout runat="server" ID="MasterLayout" GridType="Fluid">
-            <Rows>
+         <asp:ScriptManager runat="server">
+	<Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+              
+               
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+               
+              
+            </Scripts>
+             </asp:ScriptManager>
+       
                 <%--Header--%>
-                <telerik:LayoutRow CssClass="header">
-                    <Columns>
-                        <%--Logo--%>
-                        <telerik:LayoutColumn Span="2" SpanMd="3" SpanSm="12" SpanXs="12">
-                            <a href="#" class="logo">
-                                <img src="images/ajslogo.png" alt="site logo" />
-                            </a>
-                        </telerik:LayoutColumn>
-
-                        <%--Main Nav--%>
-
-                        <telerik:LayoutColumn Span="10" SpanMd="9" SpanSm="12" SpanXs="12">
+             
                         <div class ="radmenu">
 
                             <telerik:RadNavigation ID="Nav1" runat="server" EnableScreenBoundaryDetection="true">
@@ -109,9 +122,6 @@
                     </div>
                           
 					   
-                        </telerik:LayoutColumn>
-                    </Columns>
-                </telerik:LayoutRow>
 
                 <%--Main--%>
                 <telerik:LayoutRow>
@@ -138,18 +148,37 @@
                 </telerik:LayoutRow>
                  
          
-                <%--Footer--%>
-                <telerik:LayoutRow>
-                    <Columns>
-                        <telerik:LayoutColumn CssClass="footer">
-                            <hr />
-                            Footer: © 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080
-                        </telerik:LayoutColumn>
-                    </Columns>
-                </telerik:LayoutRow>
-            </Rows>
-        </telerik:RadPageLayout>
-       </div>
+              <div>
+             <center>  <p><strong>Please be sure to follow us on Social Media!</strong></p>
+            <br /> 
+                  <center><a href="#" class="btn btn-primary">Follow Us!</a>  </center>
+                 <br />
+                 </div>
+            <div style="height: 66px">
+                <br />
+  <%--Footer--%>
+                <div class="card-footer text-muted">
+
+            <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+    </div>
+        </div>
+<br />
+
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+	
+                <p>© 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080</p>
+        </div>
+    </div>
+</div>
     </form>
+  
 </body>
 </html>

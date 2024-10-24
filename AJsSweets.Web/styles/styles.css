@@ -1,15 +1,135 @@
-﻿/*normalize*/
-html, 
-body, 
+﻿.grdHeader {
+    background-color: #a5abf2;
+    font-size: 12px;
+}
+
+.grdAlternatingRow {
+    background-color: #dadbeb;
+}
+
+.grdRecords {
+    font-size: 11px;
+    color: #ffffff;
+}
+
+.containerSearch {
+    text-align: left;
+    height: 22px;
+    background-color: #f0f0f5;
+}
+
+
+.form-button {
+    color: Black;
+    background-color: #666699;
+    font: normal 8pt Verdana, Arial, sans-serif;
+    border: 1px solid #f2c2f2;
+    width: 80px;
+}
+
+.btnGo {
+    height: 25px;
+    background: url(Images/btnGo.gif) no-repeat top left;
+    color: #ffffff;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnAction {
+    height: 25px;
+    background: url(Images/btnAction.gif) no-repeat top left;
+    color: #ffffff;
+    width: 114px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #7768c4;
+}
+
+.actionButton {
+    padding: 3px 6px;
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 114px;
+    height: auto;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    background: #333;
+    color: #f0ecde !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+    border: 1px solid #7768c4;
+    font-weight: bold;
+}
+
+.MyCalendar .ajax__calendar_container {
+    border: 1px solid #000099;
+    background-color: #646464;
+    color: red;
+}
+
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}
+
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: black;
+    font-weight: bold;
+}
+
+.form-button {
+    color: Black;
+    background-color: #CCCCCC;
+    font: normal 8pt Verdana, Arial, sans-serif;
+    border: 1px solid #000000;
+    width: 80px;
+}
+
+.HeadingB {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #000099;
+    font-variant: small-caps;
+    text-transform: none;
+    margin-bottom: 0px;
+}
+
+.Heading {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #000099;
+    font-variant: small-caps;
+    text-transform: none;
+    margin-bottom: 0px;
+}
+
+
+/*normalize*/
+html,
+body,
 form {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font: normal 16px "Segoe UI", Arial, sans-serif;
-    color: #051e26;
+    color: #854bd1;
     /*Newly Added*/
     margin-top: 0px;
     margin-left: auto;
@@ -28,8 +148,9 @@ body {
         font-size: 20px;
     }
 }
+
 a {
-  background: transparent;
+    background: transparent;
 }
 
 img {
@@ -43,11 +164,6 @@ img {
     margin-left: 0px;
 }
 
-button,
-input {
-  -webkit-appearance: none; 
-  cursor: pointer; 
-}
 #logo img {
     max-height: 50px;
     width: auto;
@@ -203,8 +319,8 @@ h1, h2, h3 {
 
 h4, h5, h6 {
     font-weight: bold;
-   
 }
+
 h1 {
     font-size: 2.25em;
     font-weight: bold;
@@ -218,7 +334,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    color: #854bd1;
+    color: #da532c;
 }
 
 h4 {
@@ -235,6 +351,7 @@ h6 {
     font-size: .875em;
     color: #854bd1;
 }
+
 /*template*/
 #wrapper .t-container-fluid {
     max-width: 100%;
@@ -246,7 +363,22 @@ h6 {
 
 #wrapper .RadMenu,
 div.RadMenuPopup,
-#wrapper .RadMenu_Default, #wrapper .RadMenu_Default a.rmLink  {
+#wrapper .RadMenu_Default, #wrapper .RadMenu_Default a.rmLink {
+    font-size: 1em;
+}
+
+/*template*/
+#wrapper .t-container-fluid {
+    max-width: 100%;
+}
+
+#wrapper .RadButton {
+    font-size: 1em;
+}
+
+#wrapper .RadMenu,
+div.RadMenuPopup,
+#wrapper .RadMenu_Default, #wrapper .RadMenu_Default a.rmLink {
     font-size: 1em;
 }
 
@@ -255,13 +387,13 @@ div.RadMenuPopup,
 
 
 .topnav {
-    background-color: #e9eaea;
+    background-color: #6125b0;
     width: 100%;
 }
 
-.topnav menu {
-    padding: 4px 0px 4px 8px;
-}
+    .topnav menu {
+        padding: 4px 0px 4px 8px;
+    }
 
     .topnav ul {
         list-style: none;
@@ -270,25 +402,25 @@ div.RadMenuPopup,
         width: auto;
     }
 
-        .topnav a {
-            background-color: #6668d1;
-            border: 1px #dcd5f5 solid;
-            color: #dde4ec;
-            display: block;
-            line-height: 1.35em;
-            padding: 4px 20px;
+    .topnav a {
+        background-color: #c1c1d7;
+        border: 1px #000099 solid;
+        color: #4e5661;
+        display: block;
+        line-height: 1.35em;
+        padding: 4px 20px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+        .topnav a:hover {
+            background-color: #f0f0f5;
+            color: #884dff;
             text-decoration: none;
-            white-space: nowrap;
         }
 
-            .topnav a:hover {
-                background-color: #bbb3c7;
-                color: #372c52;
-                text-decoration: none;
-            }
-
-            div.topnav a:active {
-                background-color: #e0dee3;
-                color: #2d283d;
-                text-decoration: none;
-            }
+div.topnav a:active {
+    background-color: #884dff;
+    color: #f0f0f5;
+    text-decoration: none;
+}
