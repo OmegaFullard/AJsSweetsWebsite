@@ -27,13 +27,13 @@ namespace TelerikWebSite1
         public List<Image> GetImages()
         {
             return new List<Image>() {
-            new Image() { ID=1, Name="Combo Box", ImageUrl="~/images/assorted.png", ThumbnailUrl="~/images/Thumbnails/assorted.png", Description="Assortment of tasty treats"},
+            new Image() { ID=1, Name="Cupcakes", ImageUrl="~/images/cupcakesassort.png", ThumbnailUrl="~/images/Thumbnails/cupcakesassort.png", Description="Assortment of cupcakes"},
             new Image() { ID=2, Name="Brownies", ImageUrl="~/images/brownies.png", ThumbnailUrl="~/images/Thumbnails/brownies.png", Description="Our brownies offer a variety of options such as gluten-free, vegan, and with or without walnuts"},
-            new Image() { ID=3, Name="Chocolate Cake", ImageUrl="~/images/choccake.png", ThumbnailUrl="~/images/Thumbnails/choccake.png", Description="Chocolate cake with vegan option"},
-            new Image() { ID=4, Name="Donuts", ImageUrl="~/images/donuts.png", ThumbnailUrl="~/images/Thumbnails/donuts.png", Description="Variety of donut flavors and designs including holiday themed options"},
-            new Image() { ID=5, Name="Ginger Bread", ImageUrl="~/images/gingerbreadman.png", ThumbnailUrl="~/images/Thumbnails/gingerbreadman.png", Description="Order gingerbread men or dough to make your own gingerbreadmen or houses"},
+            new Image() { ID=4, Name="Chocolate Cake", ImageUrl="~/images/choccake.png", ThumbnailUrl="~/images/Thumbnails/choccake.png", Description="Chocolate cake with vegan option"},
+            new Image() { ID=3, Name="Donuts", ImageUrl="~/images/donuts.png", ThumbnailUrl="~/images/Thumbnails/donuts.png", Description="Variety of donut flavors and designs including holiday themed options"},
+            new Image() { ID=5, Name="Ginger Bread", ImageUrl="~/images/gingerbreadhouse.png", ThumbnailUrl="~/images/Thumbnails/gingerbreadman.png", Description="Order gingerbread men or dough to make your own gingerbreadmen or houses"},
             new Image() { ID=6, Name="Pies", ImageUrl="~/images/pies.png", ThumbnailUrl="~/images/Thumbnails/pies.png", Description="Pumpkin, Apple, Cherry, Blueberry, and Sweet Potato Pies"},
-            new Image() { ID=7, Name="Other Sweets", ImageUrl="~/images/sweetsrandom.png", ThumbnailUrl="~/images/Thumbnails/sweetsrandom.png", Description="Dessert Kits for you to bake at home"},
+            new Image() { ID=7, Name="Jams", ImageUrl="~/images/berryjam.png", ThumbnailUrl="~/images/Thumbnails/berryjam.png", Description="Now Offering Grape, Strawberry, Apple, and Peach Jams"},
             
         };
         }
@@ -61,7 +61,7 @@ namespace TelerikWebSite1
             new Article(){ ID=1, Title="Awards", Description="Voted #1 according to the AJC newspaper"},
             new Article(){ ID=1, Title="Fairs and Festivals", Description="Stop by our food truck"},
             new Article(){ ID=1, Title="Photo Submissions", Description="Photos submitted by our loyal customers"},
-            new Article(){ ID=1, Title="Sweet of the Day", Description="Santa's Sugar Cookies"}
+            new Article(){ ID=1, Title="Sweet of the Day", Description="Halloween Cookies"}
         };
         }
 

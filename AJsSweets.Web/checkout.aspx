@@ -409,10 +409,13 @@
               </div>
             </div>
           </div>
-
+            <br />
+            <br />
+            <a href="Default.aspx"><< Back to Home</a><br/>
+                <br/>
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Submit Order</button>
         </form>
       </div>
     </div>

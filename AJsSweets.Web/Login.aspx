@@ -8,7 +8,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-    
+     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
      
     <telerik:RadCard ID="RadCard1" runat="server" Width="285px">
        

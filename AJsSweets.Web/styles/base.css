@@ -36,11 +36,12 @@ img {
     border-style: none;
     border-color: inherit;
     border-width: 0;
-    width: 100px;
     margin-right: 0px;
     margin-top: 0px;
-    height: 100px;
     margin-left: 0px;
+     /*Newly Added*/
+    height: 100px;
+    width: 100px;
 }
 
 button,
@@ -257,17 +258,23 @@ div.RadMenuPopup,
 .topnav {
     background-color: #e9eaea;
     width: 100%;
+    position: sticky;
+    z-index: 1;
 }
 
-.topnav menu {
-    padding: 4px 0px 4px 8px;
-}
+    .topnav menu {
+        padding: 4px 0px 4px 8px;
+        position: sticky;
+        z-index: 1;
+    }
 
     .topnav ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
         width: auto;
+        position: sticky;
+        z-index: 1;
     }
 
         .topnav a {

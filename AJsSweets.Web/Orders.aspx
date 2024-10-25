@@ -5,18 +5,14 @@
     <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-
+       <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
     <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">
         <Rows>
             <telerik:LayoutRow>
                 <Columns>
-                    <telerik:LayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
-                        <h1>Orders</h1>
-                        <h2>Customer Order Details</h2>
-                        <telerik:RadButton runat="server" ID="RadButton0" Text="Submit" ButtonType="SkinnedButton" Skin="WebBlue" Style="position: relative;"></telerik:RadButton>
-                    </telerik:LayoutColumn>
-                    <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
+                
+                 <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>
@@ -86,7 +82,9 @@
 
      <br />
       <br />
-    
+     <hr class="my-4"/>
+
+        
     <center><a class="btn btn-primary" href="checkout.aspx" role="button">Continue to Checkout!</a></center>
              <br/>
             <a href="default.aspx"><< Back to Home</a>

@@ -6,6 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">
         <Rows>
             <telerik:LayoutRow>
@@ -17,7 +18,7 @@
                     </telerik:LayoutColumn>
                     <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
                        
-                        <img src="images/assorted.png" width="400" height="300" />
+                       
 
                     </telerik:LayoutColumn>
                 </Columns>
@@ -60,6 +61,25 @@
             </div>
         </ItemTemplate>
     </telerik:RadListView>
+
+     <telerik:RadListView runat="server" OnItemDataBound="RadListViewImages_ItemDataBound" OnNeedDataSource="RadListViewImages_NeedDataSource" ID="RadListView1" AllowPaging="true" PageSize="3">
+        <LayoutTemplate>
+            <div class="listView3">
+                <asp:Panel ID="itemPlaceholder" runat="server">
+                </asp:Panel>
+            </div>
+        </LayoutTemplate>
+        <ItemTemplate>
+            <div class="listViewItem" onclick="example.imageClicked('<%# Eval("ID") %>')">
+                <asp:Image ImageUrl='<%# Eval("ThumbnailUrl") %>' Width="200px" Height="150px" runat="server" ToolTip="Click to view larger image" />
+                <p>
+                    <asp:Literal runat="server" ID="LabelShortDescription"></asp:Literal>
+                </p>
+
+            </div>
+        </ItemTemplate>
+    </telerik:RadListView>
+   
     <telerik:RadLightBox DataImageUrlField="ImageUrl" DataDescriptionField="Description" DataTitleField="Name" runat="server" ID="RadLightBoxImageDetails">
         <ClientSettings>
             <ClientEvents OnLoad="example.radLightBoxLoad" />

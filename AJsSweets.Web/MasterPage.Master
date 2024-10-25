@@ -37,7 +37,17 @@
     <link href="App_Themes/pricing.css" rel="stylesheet" />
     <link href="App_Themes/sign-in.css" rel="stylesheet" />
    
-    
+     <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+     <script>
+    $(document).ready(function(){
+    $('#pw').keypress(function(e){
+      if(e.keyCode==13)
+      $('#GoBtn').click();
+    });
+});
+     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -45,82 +55,55 @@
 
 <body>
     <form id="form1" runat="server">
-         <asp:ScriptManager runat="server">
-	<Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-              
-               
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-               
-              
-            </Scripts>
-             </asp:ScriptManager>
-       
-                <%--Header--%>
-              <div class="topnav menu">
+        <div class="col-12 col-s-9">
+
+        <div class="header">
+       <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+           </div>
+              <!-- Main Nav -->
+      <div class="topnav menu">
             <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
                <Items>
               
- 
-                                <asp:MenuItem Text="Home" NavigateUrl="Default.aspx">
-                            </asp:MenuItem>
-                        
-                                    <asp:MenuItem Text="Orders">
-               
-                        <asp:MenuItem Text="Orders" NavigateUrl="Orders.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
+                         <asp:MenuItem NavigateUrl="Orders.aspx" Text="Orders" />
+                   <asp:MenuItem Text="Invoices">
                         <asp:MenuItem Text="Invoices" NavigateUrl="Invoices.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></asp:MenuItem>
-                    </asp:MenuItem>
-               
- <asp:MenuItem Text="Inventory">
-<asp:MenuItem Text="Inventory" NavigateUrl="Inventory.aspx"></asp:MenuItem>
-                   
-                        <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
-                    </asp:MenuItem>
+                       
+                        </asp:MenuItem>
+        
+                   <asp:MenuItem Text="Inventory">
+                   <asp:MenuItem Text="Inventory" NavigateUrl="Inventory.aspx">  </asp:MenuItem> 
+                         <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
+                       </asp:MenuItem>
+                       <asp:MenuItem Text="Reports">
               
+             <asp:MenuItem Text="Profit Report" NavigateUrl="ProfitReport.aspx"></asp:MenuItem>
+             </asp:MenuItem>
 
-<asp:MenuItem Text="Reports">
-                    
-                        <asp:MenuItem Text="Profit Report" NavigateUrl="ProfitReport.aspx"></asp:MenuItem>
-                    
-                </asp:MenuItem>
-
-
-<asp:MenuItem Text="Customer Portal">
-                  
-                        <asp:MenuItem Text="Customers" NavigateUrl="Customers.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Login" NavigateUrl="Login.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Registration" NavigateUrl="UserRegistration.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Customer Portal">
+                   <asp:MenuItem Text="Customers" NavigateUrl="Customers.aspx"></asp:MenuItem>  
+                            <asp:MenuItem Text="Login" NavigateUrl="Login.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Registration" NavigateUrl="UserRegistration.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="User Profile" NavigateUrl="UserViewProfile.aspx"></asp:MenuItem>
-
-                    </asp:MenuItem>
-             
-
-<asp:MenuItem Text="Admin Portal">
-                    
-                        <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></asp:MenuItem>
-
               
-                </asp:MenuItem>
-          
-                    <asp:MenuItem Text="About" NavigateUrl="About.aspx"></asp:MenuItem>
-                     <asp:MenuItem Text="Contact Us" NavigateUrl="Contact.aspx"></asp:MenuItem>
-        </Items>
-                </asp:Menu>
+                                
+             </asp:MenuItem>
 
-                    </div>
-     
+            <asp:MenuItem Text="Admin Portal">
+                 <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx"></asp:MenuItem> 
+            <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></asp:MenuItem>
+                   <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+              <asp:MenuItem Text="About" NavigateUrl="About.aspx" />                    
+                      <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />                    
+            </Items>
+            </asp:Menu>
+</div>
+           </div>
+        <br />
                           
 					   
         <div class="container">

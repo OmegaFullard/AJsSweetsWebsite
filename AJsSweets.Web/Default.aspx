@@ -59,22 +59,15 @@ Width: 100%;
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
   
-                            <div aria-dropeffect="move" style="padding-left:10px;padding-top:10px; padding-bottom:10px; height:500px;">
-                                <asp:Panel ID="Panel1" runat="server" BackColor="#000099" BorderColor="#1e1e2f" BorderStyle="Solid" BorderWidth="1px" Font-Bold="True" Font-Size="Small" ForeColor="White" Height="450px" HorizontalAlign="Center" Width="250px">
-                                    Created By: Omega Fullard<br />
                                     <br />
                                     <br />
                         <h4>Coming Soon!!</h4>
                         <p><strong>Please stay tuned for our Christmas themed sweets</strong></p>
                         <p>All of your favorite holiday desserts in one location.</p>
-                    </asp:Panel>
-                                </div>
-
-                       
-                        <p><strong>Directions to Our Bakery</strong></p>
+ 
                        
             <a href="https://google.com/maps?q=39.57.09,75.10.14.8"></a>
-    <center><p class="card-title"><strong>Directions to Our Help Desk Center</strong></p>                      
+    <center><p class="card-title"><strong>Directions to Our Bakery</strong></p>                      
     
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12234.543958929013!2d-75.16621169999999!3d39.94953124999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s39.57.09%2C75.10.14.8!5e0!3m2!1sen!2sus!4v1723056453703!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </center>
