@@ -39,16 +39,16 @@
                         UniqueName="Name">
                         <HeaderStyle Width="150px" />
                     </telerik:GridBoundColumn>
-                    <telerik:GridNumericColumn DataField="Age" HeaderText="Age" SortExpression="Age"
-                        UniqueName="Age">
+                    <telerik:GridNumericColumn DataField="InvoiceID" HeaderText="Invoice ID" SortExpression="InvoiceID"
+                        UniqueName="Invoice">
                         <HeaderStyle Width="150px" />
                     </telerik:GridNumericColumn>
-                    <telerik:GridDateTimeColumn DataField="BirthDate" HeaderText="BirthDate" SortExpression="BirthDate"
-                        UniqueName="BirthDate" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
+                    <telerik:GridDateTimeColumn DataField="OrderDate" HeaderText="Order Date" SortExpression="OrderDate"
+                        UniqueName="OrderDate" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
                         <HeaderStyle Width="150px" />
                     </telerik:GridDateTimeColumn>
-                    <telerik:GridRatingColumn DataField="Rating" HeaderText="Rating" SortExpression="Rating"
-                        UniqueName="Rating" GroupByExpression="Rating Group By Rating">
+                    <telerik:GridRatingColumn DataField="OrderTotal" HeaderText="Order Total" SortExpression="OrderTotal"
+                        UniqueName="Total" GroupByExpression="Orders Group By Total">
                         <HeaderStyle Width="150px" />
                     </telerik:GridRatingColumn>
                     <telerik:GridDropDownColumn DataField="City" HeaderText="City" SortExpression="City"
@@ -84,9 +84,7 @@
       <br />
      <hr class="my-4"/>
 
-        
-    <center><a class="btn btn-primary" href="checkout.aspx" role="button">Continue to Checkout!</a></center>
-             <br/>
+     
             <a href="default.aspx"><< Back to Home</a>
          
              <br/>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Inventory Management" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true"  CodeBehind="InventoryMgt.aspx.cs" Inherits="InventoryMgt" %>
+﻿<%@ Page Title="Pricing" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true"  CodeBehind="Pricing.aspx.cs" Inherits="InventoryMgt" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -12,16 +12,11 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Inventory Details</h4>
+                           <h4>Pricing</h4>
                         </center>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                          <img src="images/Inventory.png" />
-                        </center>
-                     </div>
+                  
                   </div>
                   <div class="row">
                      <div class="col">
@@ -35,11 +30,11 @@
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <label>Inventory ID</label>
+                        <label>Item ID</label>
                         <div class="form-group">
                            <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Inventory ID"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
+                           
                                <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
                            </div>
                         </div>
@@ -65,7 +60,7 @@
                              
                            </asp:DropDownList>
                         </div>
-                        <label>Item Details</label>
+                        <label>Details</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="DropDownList2" runat="server">
                               <asp:ListItem Text="Item 1" Value="Item 1" />   
@@ -98,19 +93,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col-md-4">
-                        <label>Supplies</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox9" runat="server" placeholder="Supplies"></asp:TextBox>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <label>Supplies Cost(per unit)</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox10" runat="server" placeholder="Supply Cost(per unit)" TextMode="Number"></asp:TextBox>
-                        </div>
-                     </div>
+                  
                      <div class="col-md-4">
                         <label>Quantity</label>
                         <div class="form-group">
@@ -118,19 +101,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col-md-4">
-                        <label>Actual Stock</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Actual Stock" TextMode="Number"></asp:TextBox>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <label>Current Stock</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Cost(per unit)" TextMode="Number" ReadOnly="True"></asp:TextBox>
-                        </div>
-                     </div>
+                  
                      <div class="col-md-4">
                         <label>Ordered</label>
                         <div class="form-group">
@@ -160,49 +131,15 @@
                          </telerik:CardActionsContainerComponent>
                         </div>
                   </div>
-               </div>
-            </div>
-            <a href="Default.aspx"><< Back to Home</a><br/>
+           
+        
+        
+    <center><a class="btn btn-primary" href="checkout.aspx" role="button">Continue to Checkout!</a></center>
+             <br/>
+           
+          <a href="Default.aspx"><< Back to Home</a><br/>
             <br/>
          </div>
-         <div class="col-md-6">
-            <div class="card">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                           <h4>Inventory List</h4>
-                        </center>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                        <hr/>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="InventoryID" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#D1E0E0">
-                             <Columns>
-                                 <asp:BoundField DataField="Items" HeaderText="Items" SortExpression="Items"></asp:BoundField>
-                                 <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity"></asp:BoundField>
-                                 <asp:BoundField DataField="Purchase Price" HeaderText="Purchase Price" SortExpression="Purchase Price"></asp:BoundField>
-                                 <asp:BoundField DataField="Selling Price" HeaderText="Selling Price" SortExpression="Selling Price"></asp:BoundField>
-                                 <asp:BoundField DataField="Expenses" HeaderText="Expenses" SortExpression="Expenses"></asp:BoundField>
-                                 <asp:BoundField DataField="InventoryID" HeaderText="InventoryID" ReadOnly="True" SortExpression="InventoryID"></asp:BoundField>
-                                 <asp:BoundField DataField="Unit Price" HeaderText="Unit Price" SortExpression="Unit Price"></asp:BoundField>
-                             </Columns>
-                         </asp:GridView>
-                         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AJs_SweetsConnectionString %>' SelectCommand="SELECT * FROM [Inventory] WHERE ([InventoryID] = @InventoryID)">
-                             <SelectParameters>
-                                 <asp:ControlParameter ControlID="TextBox2" PropertyName="Text" Name="InventoryID" Type="String"></asp:ControlParameter>
-                             </SelectParameters>
-                         </asp:SqlDataSource>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+        
    </div>
     </asp:Content>
