@@ -16,11 +16,19 @@
 <meta name="theme-color" content="#ffffff"/>
     <title>AJs Sweets</title>
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+    
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+ 
+    
      <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="styles/base.css" rel="stylesheet" />
     <link href="styles/default.css" rel="stylesheet" />
     <link href="styles/grid.css" rel="stylesheet" />
     <link href="styles/listView.css" rel="stylesheet" />
+
     <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
     <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
 
@@ -74,7 +82,7 @@
                <Items>
               
                     <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
-                         <asp:MenuItem NavigateUrl="Orders.aspx" Text="Orders" />
+                        
                    <asp:MenuItem Text="Invoices">
                         <asp:MenuItem Text="Invoices" NavigateUrl="Invoices.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></asp:MenuItem>

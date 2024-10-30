@@ -10,10 +10,11 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using Telerik.Web.UI;
 
-public partial class InventoryMgt : System.Web.UI.Page 
-{
-    protected void Page_Load(object sender, EventArgs e)
-    {
 
+    public partial class InventoryMgt : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-}

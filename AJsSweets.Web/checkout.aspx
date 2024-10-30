@@ -1,70 +1,84 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master"CodeFile="checkout.aspx.cs" Inherits="checkout" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="checkout.aspx.cs" Inherits="checkout" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-   
+      <asp:PlaceHolder runat="server">
+      <%: Scripts.Render("~/bundles/modernizr") %>
+  </asp:PlaceHolder>
 
+  <webopt:bundlereference runat="server" path="~/Content/css" />
+
+      
         <div class="container">
 
-<div class="py-5 text-center">
+    <div class="py-5 text-center">
     
     <h2>Checkout Form</h2>
-    </div>
-
+   
+        </div>
     <div class="py-5 text-center">
         <img src="images/ajslogo.png" alt="logo" width="72" height="57"/>
       
       
     </div>
 
-    <div class="row g-5">
-      <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-          <span class="text-primary">Your cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
-        </h4>
-        <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Product name</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$12</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Second product</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$8</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Third item</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
-            <div class="text-success">
-              <h6 class="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span class="text-success">−$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
+    <div class="cart">
+        <div class="cart-item">
+
+            <span>Strawberry Jam</span>
+            
+              <span>Homemade strawberry jam</span>
+            <input type="number" value="1" class="quantity"/>
+            <span class="price">$10</span>
+             <br />
+              <br />
+            <button class="remove">Remove</button>
+         </div>
+        
+       <br />
+        <br />
+            <div class="cart-item">
+              <span>Pumpkin Pie</span>
+              <small class="text-body-secondary">Just a sweet reminder of the fall season</small>
+             <input type="number" value="1" class="quantity"/>
+            <span class="price">$20</span>
+            <br />
+              <br />
+            <button class="remove">Remove</button>
+        </div>
+        <br />
+          <br />
+
+
+            <div class="cart-item">
+              <h6 class="my-0">Halloween Cupcakes</h6>
+              <small class="text-body-secondary">Trick or Treat. Check out these Spook-Tacular cupcakes with Halloween themes.</small>
+            <input type="number" value="1" class="quantity"/>
+            <span class="price">$25</span>
+           <br />
+              <br />
+            <button class="remove">Remove</button>
+        </div>
+        <br />
+          <br />
+
+          <div class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
             <strong>$20</strong>
-          </li>
-        </ul>
-
+          </div>
+       
         <class="card p-2">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Promo code"/>
             <button type="submit" class="btn btn-secondary">Redeem</button>
           </div>
-        </>
+  
       </div>
+      <br />
+  
+
+
+  
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Billing address</h4>
         <class="needs-validation" novalidate>
@@ -120,9 +134,9 @@
             <div class="col-md-5">
               <label for="country" class="form-label">Country</label>
               <select class="form-select" id="country" >
-                <option value="">Choose...</option>
-                <option>United States</option>
-              </select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option value="">Choose...</option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option>United States</option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
               <div class="invalid-feedback">
                 Please select a valid country.
               </div>
@@ -131,9 +145,9 @@
             <div class="col-md-4">
               <label for="state" class="form-label">State</label>
               <select class="form-select" id="state" >
-                <option value="">Choose...</option>
-                <option>California</option>
-              </select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option value="">Choose...</option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option>California</option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
               <div class="invalid-feedback">
                 Please provide a valid state.
               </div>
@@ -213,27 +227,14 @@
               </div>
             </div>
           </div>
-            <br />
-            <br />
-            <a href="Default.aspx"><< Back to Home</a><br/>
-                <br/>
-          <hr class="my-4"/>
+              <hr class="my-4"/>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Submit Order</button>
-        
+          <button class="btn btn-success rounded-pill px-3" type="submit">Submit Order</button>
+
       </div>
     </div>
- 
 
-  
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
- 
-</div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="checkout.js"></script>
-    </asp:Content>
+   </asp:Content>
