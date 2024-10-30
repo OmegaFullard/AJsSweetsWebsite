@@ -25,9 +25,9 @@
     <div class="cart">
         <div class="cart-item">
 
-            <span>Strawberry Jam</span>
+            <h6 class="my-0">Strawberry Jam</h6>
             
-              <span>Homemade strawberry jam</span>
+              <small class="text-body-secondary">Homemade strawberry jam</small>
             <input type="number" value="1" class="quantity"/>
             <span class="price">$10</span>
              <br />
@@ -38,7 +38,7 @@
        <br />
         <br />
             <div class="cart-item">
-              <span>Pumpkin Pie</span>
+              <h6 class="my-0">Pumpkin Pie</h6>
               <small class="text-body-secondary">Just a sweet reminder of the fall season</small>
              <input type="number" value="1" class="quantity"/>
             <span class="price">$20</span>
@@ -64,7 +64,7 @@
 
           <div class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>$20</strong>
+            <strong>$55</strong>
           </div>
        
         <class="card p-2">

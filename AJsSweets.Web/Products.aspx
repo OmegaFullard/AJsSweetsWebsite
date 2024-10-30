@@ -1,14 +1,14 @@
-﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="TelerikWebSite1.ListView" %>
-<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeFile="Products.aspx.cs" Inherits="Products" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-     
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check" viewBox="0 0 16 16">
     <title>Check</title>
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
   </symbol>
 </svg>
+    
 
 <div class="container py-3">
 
@@ -26,10 +26,9 @@
 
     <hr />
         </div>
-                        <h1>Sweets and Treats</h1>
-                        <h2>"Let us satisfy your sweettooth"</h2>
-                        <telerik:RadButton runat="server" ID="RadButton0" Text="Place Order" ButtonType="SkinnedButton" NavigateUrl="~/Orders.aspx"></telerik:RadButton>
-                   
+                        <h4>Sweets and Treats: "Let us satisfy your sweettooth"</h4>
+                       
+                       
 
     <br />
     

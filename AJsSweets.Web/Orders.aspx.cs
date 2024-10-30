@@ -73,7 +73,7 @@ namespace TelerikWebSite1
 
         protected void RadGrid1_NeedDataSource(object sender, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
         {
-            RadGrid1.DataSource = this.Sellers;
+            //RadGrid1.DataSource = this.Sellers;
         }
 
         protected void RadGrid1_UpdateCommand(object sender, Telerik.Web.UI.GridCommandEventArgs e)
@@ -128,24 +128,24 @@ namespace TelerikWebSite1
         protected void RadGrid1_ItemDataBound(object sender, GridItemEventArgs e)
         {
             RadComboBox comboBox = e.Item.FindControl("RCB_City") as RadComboBox;
-            if (comboBox != null)
-            {
-                if (!(e.Item.DataItem is GridInsertionObject))
-                {
-                    comboBox.SelectedValue = (e.Item.DataItem as DataRowView)["City"].ToString();
-                }
-                comboBox.DataTextField = string.Empty;
-                comboBox.DataSource = this.GetCities();
-                comboBox.DataBind();
-                if (this.RadGrid1.ResolvedRenderMode == RenderMode.Mobile)
-                {
-                    (e.Item.FindControl("TB_Age") as WebControl).Enabled = false;
-                }
-                else
-                {
-                    ((e.Item as GridEditableItem)["Age"].Controls[0] as WebControl).Enabled = false;
-                }
-            }
+            //if (comboBox != null)
+            //{
+            //    if (!(e.Item.DataItem is GridInsertionObject))
+            //    {
+            //        comboBox.SelectedValue = (e.Item.DataItem as DataRowView)["City"].ToString();
+            //    }
+            //    comboBox.DataTextField = string.Empty;
+            //    comboBox.DataSource = this.GetCities();
+            //    comboBox.DataBind();
+            //    if (this.RadGrid1.ResolvedRenderMode == RenderMode.Mobile)
+            //    {
+            //        (e.Item.FindControl("TB_Age") as WebControl).Enabled = false;
+            //    }
+            //    else
+            //    {
+            //        ((e.Item as GridEditableItem)["Age"].Controls[0] as WebControl).Enabled = false;
+            //    }
+            //}
         }
 
         protected void RadGrid1_ItemCreated(object sender, GridItemEventArgs e)
