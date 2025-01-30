@@ -106,7 +106,7 @@
 
             <asp:MenuItem Text="Admin Portal">
                  <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx"></asp:MenuItem> 
-            <asp:MenuItem Text="Inventory Management" NavigateUrl="InventoryMgt.aspx"></asp:MenuItem>
+            
                 <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></asp:MenuItem>
                    <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></asp:MenuItem>
                 </asp:MenuItem>
