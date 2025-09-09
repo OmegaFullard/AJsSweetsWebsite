@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Web.Optimization;
+using System.Web.Routing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,8 +14,9 @@ namespace Telerik.Web
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
-            Telerik.WebReportDesigner.Services.WebApi.ReportDesignerControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
+            
+            //Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
+            //Telerik.WebReportDesigner.Services.WebApi.ReportDesignerControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
 
             //Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
         }
