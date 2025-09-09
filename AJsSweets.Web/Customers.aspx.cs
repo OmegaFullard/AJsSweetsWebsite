@@ -12,10 +12,13 @@ using Telerik.Web.UI;
 using Telerik.Web.UI.Skins;
 using Telerik.Web.Design;
 
-public partial class Customers : System.Web.UI.Page 
+namespace TelerikWebsite1
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Customers : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

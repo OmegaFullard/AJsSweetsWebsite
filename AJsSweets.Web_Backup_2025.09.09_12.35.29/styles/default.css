@@ -1,0 +1,234 @@
+﻿
+#wrapper .header {
+    background-color: #854bd1;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+    #wrapper .header .RadMenu {
+        margin: 10px 0;
+        float: none;
+    }
+
+#wrapper .logo {
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+    #wrapper .logo img {
+        max-width: 100%;
+    }
+
+#wrapper .jumbotron {
+    padding: 1.875em;
+    padding-top: 1em;
+    background-color: #e6ecff;
+}
+
+    #wrapper .jumbotron .RadButton {
+        float: right;
+        margin-top: .667em;
+        font-size: .5em;
+    }
+
+#wrapper .footer {
+    width: 100%;
+    padding: 30px 15px;
+    line-height: 30px;
+}
+
+.MyLabel {
+    display: block;
+    width: 150px;
+    margin-top: 4px;
+}
+
+html body form .RadInput .MyEmptyTextBox,
+html body form .RadInput .MyEnabledTextBox,
+html body form .RadInput .MyHoveredTextBox,
+html body form .RadInput .MyFocusedTextBox,
+html body form .RadInput .MyInvalidTextBox,
+html body form .RadInput .MyNegativeTextBox {
+    border-width: 2px;
+    border-color: #a9c9a9;
+    font: 14px/18px arial,sans-serif;
+}
+
+html body .RadInput .MyEmptyTextBox {
+    color: #999;
+}
+
+html body form .RadInput .MyEnabledTextBox {
+}
+
+html body form .RadInput .MyHoveredTextBox {
+    border-color: #6c6;
+    background: #efe;
+}
+
+html body form .RadInput .MyFocusedTextBox {
+    border-color: #3a3;
+    background: #efe;
+}
+
+html body form .RadInput .MyInvalidTextBox {
+    border-color: #f33;
+    background: none #ff9;
+}
+
+html body form .RadInput .MyNegativeTextBox {
+    color: #930;
+    font-weight: bold;
+}
+
+#example .RadInput .riLabel {
+    color: #555;
+}
+
+#example .RadInput .riTextBox {
+    color: #555;
+}
+
+#example .demo-containers {
+    margin: 30px auto;
+}
+
+    #example .demo-containers .demo-container {
+        display: inline-block;
+        padding: 30px;
+        margin: 10px auto;
+        min-width: 250px;
+        min-height: 85px;
+    }
+
+.fb-group .riSingle {
+    display: inline-block !important;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* Google */
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+/* YouTube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+/* Pinterest */
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+/* Snap */
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* Skype */
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+/* Android */
+.fa-android {
+    background: #a4c639;
+    color: white;
+}
+/* Dribbble? */
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+/* Vimeo */
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+/* Tumblr */
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+/* Vine */
+.fa-vine {
+    background: #00b489;
+    color: white;
+}
+/* Foursquare */
+.fa-foursquare {
+    background: #45bbff;
+    color: white;
+}
+/* Stumbleupon? */
+.fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+}
+/* Flickr */
+.fa-flickr {
+    background: #f40083;
+    color: white;
+}
+/* Yahoo */
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+/* Soundcloud */
+.fa-soundcloud {
+    background: #ff5500;
+    color: white;
+}
+/* Reddit */
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+/* RSS */
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+

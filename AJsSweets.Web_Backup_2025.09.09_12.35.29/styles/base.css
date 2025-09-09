@@ -1,0 +1,301 @@
+﻿/*normalize*/
+html, 
+body, 
+form {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font: normal 16px "Segoe UI", Arial, sans-serif;
+    color: #051e26;
+    /*Newly Added*/
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f5;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+}
+a {
+  background: transparent;
+}
+
+img {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+     /*Newly Added*/
+    height: 100px;
+    width: 100px;
+}
+
+button,
+input {
+  -webkit-appearance: none; 
+  cursor: pointer; 
+}
+#logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* Google */
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+/* YouTube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+/* Pinterest */
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+/* Snap */
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* Skype */
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+/* Android */
+.fa-android {
+    background: #a4c639;
+    color: white;
+}
+/* Dribbble? */
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+/* Vimeo */
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+/* Tumblr */
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+/* Vine */
+.fa-vine {
+    background: #00b489;
+    color: white;
+}
+/* Foursquare */
+.fa-foursquare {
+    background: #45bbff;
+    color: white;
+}
+/* Stumbleupon? */
+.fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+}
+/* Flickr */
+.fa-flickr {
+    background: #f40083;
+    color: white;
+}
+/* Yahoo */
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+/* Soundcloud */
+.fa-soundcloud {
+    background: #ff5500;
+    color: white;
+}
+/* Reddit */
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+/* RSS */
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+button,
+input {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+    border-color: #767676;
+    border-style: solid;
+}
+
+/*typography*/
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    margin: .5em 0;
+}
+
+h4, h5, h6 {
+    font-weight: bold;
+   
+}
+h1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    color: #854bd1;
+}
+
+h2 {
+    font-size: 1.875em;
+    color: #854bd1;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #854bd1;
+}
+
+h4 {
+    font-size: 1.125em;
+    color: #854bd1;
+}
+
+h5 {
+    font-size: 1em;
+    color: #854bd1;
+}
+
+h6 {
+    font-size: .875em;
+    color: #854bd1;
+}
+/*template*/
+#wrapper .t-container-fluid {
+    max-width: 100%;
+}
+
+#wrapper .RadButton {
+    font-size: 1em;
+}
+
+#wrapper .RadMenu,
+div.RadMenuPopup,
+#wrapper .RadMenu_Default, #wrapper .RadMenu_Default a.rmLink  {
+    font-size: 1em;
+}
+
+/* Form Elements*
+--------------------------------------------------------------------------*/
+
+
+.topnav {
+    background-color: #e9eaea;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+}
+
+    .topnav menu {
+        padding: 4px 0px 4px 8px;
+        position: sticky;
+        z-index: 1;
+    }
+
+    .topnav ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        position: sticky;
+        z-index: 1;
+    }
+
+        .topnav a {
+            background-color: #6668d1;
+            border: 1px #dcd5f5 solid;
+            color: #dde4ec;
+            display: block;
+            line-height: 1.35em;
+            padding: 4px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            .topnav a:hover {
+                background-color: #bbb3c7;
+                color: #372c52;
+                text-decoration: none;
+            }
+
+            div.topnav a:active {
+                background-color: #e0dee3;
+                color: #2d283d;
+                text-decoration: none;
+            }

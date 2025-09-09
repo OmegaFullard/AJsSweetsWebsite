@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TelerikWebSite1.MasterPage" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+
+<meta name="msapplication-TileColor" content="#854bd1"/>
+<meta name="theme-color" content="#ffffff"/>
+    <title>AJs Sweets</title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+    
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+ 
+    
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="styles/default.css" rel="stylesheet" />
+    <link href="styles/grid.css" rel="stylesheet" />
+    <link href="styles/listView.css" rel="stylesheet" />
+
+    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+
+    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+
+    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
+    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
+     
+			     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/"/>
+     <link href="App_Themes/Page.css" rel="stylesheet" />
+    <link href="App_Themes/dropdowns.css" rel="stylesheet" />
+    <link href="App_Themes/headers.css" rel="stylesheet" />
+    <link href="App_Themes/modals.css" rel="stylesheet" />
+    <link href="App_Themes/pricing.css" rel="stylesheet" />
+    <link href="App_Themes/sign-in.css" rel="stylesheet" />
+   
+     <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+     <script>
+    $(document).ready(function(){
+    $('#pw').keypress(function(e){
+      if(e.keyCode==13)
+      $('#GoBtn').click();
+    });
+});
+     </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="col-12 col-s-9">
+
+        <div class="header">
+       <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+           </div>
+              <!-- Main Nav -->
+      <div class="topnav menu">
+            <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
+               <Items>
+              
+                    <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
+                        
+                   <asp:MenuItem Text="Invoices">
+                        <asp:MenuItem Text="Invoices" NavigateUrl="Invoices.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Invoice Details" NavigateUrl="InvoiceDetails.aspx"></asp:MenuItem>
+                       
+                        </asp:MenuItem>
+        
+                   <asp:MenuItem Text="Products">
+                   <asp:MenuItem Text="Products" NavigateUrl="Products.aspx">  </asp:MenuItem> 
+                         <asp:MenuItem Text="Pricing" NavigateUrl="Pricing.aspx"></asp:MenuItem>
+                       </asp:MenuItem>
+                    
+              
+                        <asp:MenuItem Text="Customer Portal">
+                   <asp:MenuItem Text="Customers" NavigateUrl="Customers.aspx"></asp:MenuItem>  
+                            <asp:MenuItem Text="Login" NavigateUrl="Login.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Registration" NavigateUrl="UserRegistration.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="User Profile" NavigateUrl="UserViewProfile.aspx"></asp:MenuItem>
+              
+                                
+             </asp:MenuItem>
+
+            <asp:MenuItem Text="Admin Portal">
+                 <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx"></asp:MenuItem> 
+            
+                <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx"></asp:MenuItem>
+                   <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+              <asp:MenuItem Text="About" NavigateUrl="About.aspx" />                    
+                      <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />                    
+            </Items>
+            </asp:Menu>
+</div>
+           </div>
+        <br />
+                          
+					   
+        <div class="container">
+    <!-- Main Content -->
+    <div class="row">
+        <div class="col-md-10 col-sm-12">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+            </div>
+     <br />
+
+       <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+   
+    
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+      </div>
+ <div class="container body-content">
+     <asp:ContentPlaceHolder ID="MainContent" runat="server">
+     </asp:ContentPlaceHolder>
+     <hr />
+     <div class="b-example-divider"></div>
+</div>
+      </header>
+
+  <div class="card-footer text-muted">
+     
+
+             <center>  <p><strong>Please be sure to follow us on Social Media!</strong></p>
+            <br /> 
+                  <center><a href="#" class="btn btn-primary">Follow Us!</a>  </center>
+                 <br />
+            <div style="height: 66px">
+                <br />
+
+            <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+        </div>
+<br />
+
+
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+	
+                <p>© 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080</p>
+        </div>
+    </div>
+</div>
+    </form>
+  
+</body>
+</html>
