@@ -1,6 +1,4 @@
-﻿<%@ Page Title="Invoices" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Invoices.aspx.cs" Inherits="Invoices" %>
-
-
+﻿<%@ Page Title="Invoices" Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeFile="Invoices.aspx.cs" Inherits="Invoices" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
       <link href="styles/default.css" rel="stylesheet" />

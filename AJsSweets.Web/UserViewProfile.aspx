@@ -1,4 +1,5 @@
-﻿<%@ Page Title="User Profile" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="InvoiceDetails.aspx.cs" Inherits="InvoiceDetails" %>
+﻿<%@ Page Title="User Profile" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="UserViewProfile.aspx.cs" Inherits="UserViewProfile" %>
+
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
       <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
@@ -237,3 +238,4 @@
          </div>
    
 </asp:Content>
+

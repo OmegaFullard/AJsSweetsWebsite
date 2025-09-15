@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34114.132
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportLibrary", "ReportLibrary\ReportLibrary.csproj", "{79032A03-2376-4153-A8CB-9816CC1042B1}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AJsSweetsData", "AJsSweetsData\", "{D1201B73-DB90-4A30-8268-DC5884B154FE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
@@ -55,10 +53,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79032A03-2376-4153-A8CB-9816CC1042B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79032A03-2376-4153-A8CB-9816CC1042B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79032A03-2376-4153-A8CB-9816CC1042B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79032A03-2376-4153-A8CB-9816CC1042B1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1201B73-DB90-4A30-8268-DC5884B154FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1201B73-DB90-4A30-8268-DC5884B154FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1201B73-DB90-4A30-8268-DC5884B154FE}.Release|Any CPU.ActiveCfg = Debug|Any CPU

@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Invoice Details" Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="InvoiceDetails.aspx.cs" Inherits="InvoiceDetails" %>
+﻿<%@ Page Title="Invoice Details" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="InvoiceDetails.aspx.cs" Inherits="InvoiceDetails" %>
+
+
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">  
 </asp:Content>

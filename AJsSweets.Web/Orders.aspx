@@ -1,5 +1,4 @@
-﻿
-<%@ Page Title="Orders" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Orders.aspx.cs" Inherits="TelerikWebSite1.Grid" %>
+﻿<%@ Page Title="Orders" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Orders.aspx.cs" Inherits="Orders" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
     <link href="styles/default.css" rel="stylesheet" />
@@ -89,5 +88,6 @@
          
              <br/>
 </asp:Content>
+
 
 

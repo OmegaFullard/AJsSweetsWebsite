@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Pricing" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true"  CodeBehind="Pricing.aspx.cs" Inherits="InventoryMgt" %>
-
+﻿<%@ Page Title="Pricing" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Pricing.aspx.cs" Inherits="Pricing" %>
 
   <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 

@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TelerikWebSite1.Default" %>
+﻿<%@ Page Title="Home" Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+ 
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" Runat="Server">
