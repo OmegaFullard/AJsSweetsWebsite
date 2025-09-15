@@ -26,7 +26,7 @@ Width: 100%;
                     <telerik:LayoutColumn CssClass="jumbotron">
                         <h1>Welcome to AJ's Sweets</h1>
                         <h2>Place an Order
-                            <telerik:RadButton runat="server" ID="RadButton0" Text="Order Now" ButtonType="SkinnedButton" Skin="WebBlue" NavigateUrl="~/Products.aspx"></telerik:RadButton>
+                            <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" PostBackUrl="~/Products.aspx" />
                         </h2>
 
                     </telerik:LayoutColumn>
