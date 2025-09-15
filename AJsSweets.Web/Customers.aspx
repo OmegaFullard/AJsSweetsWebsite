@@ -24,7 +24,7 @@
     </telerik:RadAjaxManager>
     <div>
 
-        <telerik:RadDataForm ID="RadDataForm1" Skin="Glow" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+        <telerik:RadDataForm ID="RadDataForm1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1" EnableEmbeddedSkins="False">
            <LayoutTemplate>
         <div >
             <div id="itemPlaceholder" runat="server"></div>
@@ -32,7 +32,7 @@
                <div class="RadDataForm RadDataForm_<%# Container.Skin %> rdfLeftAligned rdfNoFieldHint">
             <div id="Div1" runat="server">
             </div>
-            <telerik:RadDataPager ID="RadDataPager1" runat="server" PagedControlID="RadDataForm1">
+            <telerik:RadDataPager ID="RadDataPager1" runat="server" PagedControlID="RadDataForm1" EnableEmbeddedSkins="False">
                 <Fields>
                     <telerik:RadDataPagerButtonField FieldType="FirstPrev" />
                     <telerik:RadDataPagerButtonField FieldType="NextLast" />

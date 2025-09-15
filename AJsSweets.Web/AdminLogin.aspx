@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-    <telerik:RadCard ID="RadCard1" runat="server" Width="285px">
+    <telerik:RadCard ID="RadCard1" runat="server" Width="285px" EnableEmbeddedSkins="False">
        
     <telerik:CardImageComponent runat="server" src="images/admin.png"></telerik:CardImageComponent>
 
@@ -18,14 +18,14 @@
         <div class="demo-containers">
         <div class="demo-container">
         <telerik:RadTextBox ID="RadTextBox1" RenderMode="Lightweight" Width="245px" runat="server" Label="Admin ID: "
-                EmptyMessage="Admin ID" InvalidStyleDuration="100"></telerik:RadTextBox>
+                EmptyMessage="Admin ID" InvalidStyleDuration="100" EnableEmbeddedSkins="False"></telerik:RadTextBox>
         
                <br />
                 <br />
             </div>
         <div class="demo-container">
         <telerik:RadTextBox RenderMode="Lightweight" Width="245px"  ID="RadTextBox2" runat="server" TextMode="Password" Label="Password: "  
-                placeholder="Password" InvalidStyleDuration="100"></telerik:RadTextBox>
+                placeholder="Password" InvalidStyleDuration="100" EnableEmbeddedSkins="False"></telerik:RadTextBox>
              </div>
             </div>
     </telerik:CardBodyComponent>
