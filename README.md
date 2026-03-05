@@ -1,4 +1,4 @@
-# AJsSweetsWebsite
+# AJs Sweets Website
 
 Website created to Demonstrate Responsive Web Design
 
