@@ -11,4 +11,6 @@
   
     <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True"/>
   </Globals>
+
+  <iisExpressSettings windowsAuthentication="enabled" anonymousAuthentication="enabled" useClassicPipelineMode="false"/>
 </VisualWebDeveloper>

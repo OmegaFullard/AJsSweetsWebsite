@@ -225,6 +225,67 @@
  </div>
 
 
-    
-</asp:Content>
+<div class="container py-3">
+    <hr />
+    <h4><strong>Manage Product Catalog</strong></h4>
 
+    <asp:GridView ID="gvProducts" runat="server"
+        CssClass="table table-striped table-bordered"
+        AutoGenerateColumns="False"
+        DataSourceID="dsProducts"
+        DataKeyNames="ProductId"
+        EmptyDataText="No products found.">
+        <Columns>
+            <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+            <asp:BoundField DataField="ProductId" HeaderText="ID" ReadOnly="True" InsertVisible="False" />
+            <asp:BoundField DataField="ProductName" HeaderText="Product" />
+            <asp:BoundField DataField="Category" HeaderText="Category" />
+            <asp:BoundField DataField="UnitDescription" HeaderText="Unit" />
+            <asp:BoundField DataField="Price" HeaderText="Price" DataFormatString="{0:C}" ApplyFormatInEditMode="False" />
+            <asp:CheckBoxField DataField="IsActive" HeaderText="Active" />
+        </Columns>
+    </asp:GridView>
+
+    <h5>Add New Product</h5>
+    <asp:DetailsView ID="dvAddProduct" runat="server"
+        DataSourceID="dsProducts"
+        AutoGenerateRows="False"
+        DefaultMode="Insert"
+        CssClass="table">
+        <Fields>
+            <asp:BoundField DataField="ProductName" HeaderText="Product" />
+            <asp:BoundField DataField="Category" HeaderText="Category" />
+            <asp:BoundField DataField="UnitDescription" HeaderText="Unit" />
+            <asp:BoundField DataField="Price" HeaderText="Price" />
+            <asp:CheckBoxField DataField="IsActive" HeaderText="Active" />
+            <asp:CommandField ShowInsertButton="True" />
+        </Fields>
+    </asp:DetailsView>
+
+    <asp:SqlDataSource ID="dsProducts" runat="server"
+        ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>"
+        SelectCommand="SELECT ProductId, ProductName, Category, UnitDescription, Price, IsActive FROM dbo.Products ORDER BY Category, ProductName"
+        InsertCommand="INSERT INTO dbo.Products (ProductName, Category, UnitDescription, Price, IsActive, CreatedUtc) VALUES (@ProductName, @Category, @UnitDescription, @Price, @IsActive, GETUTCDATE())"
+        UpdateCommand="UPDATE dbo.Products SET ProductName=@ProductName, Category=@Category, UnitDescription=@UnitDescription, Price=@Price, IsActive=@IsActive WHERE ProductId=@ProductId"
+        DeleteCommand="DELETE FROM dbo.Products WHERE ProductId=@ProductId">
+        <InsertParameters>
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="Category" Type="String" />
+            <asp:Parameter Name="UnitDescription" Type="String" />
+            <asp:Parameter Name="Price" Type="Decimal" />
+            <asp:Parameter Name="IsActive" Type="Boolean" DefaultValue="True" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="ProductName" Type="String" />
+            <asp:Parameter Name="Category" Type="String" />
+            <asp:Parameter Name="UnitDescription" Type="String" />
+            <asp:Parameter Name="Price" Type="Decimal" />
+            <asp:Parameter Name="IsActive" Type="Boolean" />
+            <asp:Parameter Name="ProductId" Type="Int32" />
+        </UpdateParameters>
+        <DeleteParameters>
+            <asp:Parameter Name="ProductId" Type="Int32" />
+        </DeleteParameters>
+    </asp:SqlDataSource>
+</div>
+</asp:Content>

@@ -152,7 +152,7 @@
                            <span class="badge badge-pill badge-info"><b>Login Credentials</b></span>
                       
 
-                     </div>
+                     </div }
                   </div>
                    <br />
                     
@@ -160,19 +160,19 @@
                      <div class="col-md-4">
                         <label>User ID</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ReadOnly="False"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <label>Old Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Email ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Confirm Password" TextMode="Password" ReadOnly="False"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <label>New Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Email ID" TextMode="Password"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -184,7 +184,10 @@
                                <br />
                            <div class="form-group">
                           
-                               <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button2" runat="server" Width="245px" Height="50px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Sign Up" />
+                               <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button2" runat="server"
+    Width="245px" Height="50px"
+    style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0"
+    Text="Sign Up" OnClick="Button2_Click" />
                            </div>
                       
                      </div>

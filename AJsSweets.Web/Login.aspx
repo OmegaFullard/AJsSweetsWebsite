@@ -1,63 +1,41 @@
 ﻿<%@ Page Title="Account Login" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" runat="server">
-  
-       <link href="styles/default.css" rel="stylesheet" />
+    <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-     
-    <telerik:RadCard ID="RadCard1" runat="server" Width="285px" EnableEmbeddedSkins="False">
-       
-    <telerik:CardImageComponent runat="server" src="images/defaultuser.png"></telerik:CardImageComponent>
+    <div class="container" style="max-width:420px;">
+        <h3>Login</h3>
+        <hr />
 
-    <telerik:CardBodyComponent runat="server">
-        <telerik:CardTitleComponent runat="server">
-            <center><b>Member Login</b></center>   
-            <br />
-    
-        </telerik:CardTitleComponent>
-        <div class="demo-containers">
-        <div class="demo-container">
-        <telerik:RadTextBox ID="RadTextBox1" RenderMode="Lightweight" Width="245px" runat="server" Label="User Name: "
-                EmptyMessage="Member ID" InvalidStyleDuration="100" EnableEmbeddedSkins="False"></telerik:RadTextBox>
-        
-               <br />
-                <br />
-            </div>
-            <center>
-        <div class="demo-container">
-        <telerik:RadTextBox RenderMode="Lightweight" Width="245px"  ID="RadTextBox2" runat="server" TextMode="Password" Label="Password: "  
-                placeholder="Password" InvalidStyleDuration="100" EnableEmbeddedSkins="False"></telerik:RadTextBox>
-             </div>
-            </div>
-        
-    </telerik:CardBodyComponent>
-        
-    <telerik:CardActionsContainerComponent runat="server" Orientation="Vertical" CardActionsAlignment="Stretched">
-         <telerik:CardSeparatorComponent runat="server">
-        <span class="k-button k-solid k-success" style="color: #e0dee3; background-color: #471093; border: medium solid #C0C0C0">Login</span>
-  <span class="k-button k-solid k-success" style="color: #66b8d1; background-color: #e0dee3; border: medium solid #C0C0C0"><asp:DynamicHyperLink ID="DynamicHyperLink1" runat="server" NavigateUrl="~/UserRegistration.aspx">Sign Up</asp:DynamicHyperLink></span>
-         
-                </telerik:CardSeparatorComponent>
+        <asp:Label ID="lblLoginMessage" runat="server" ForeColor="Red"></asp:Label>
 
-    </telerik:CardActionsContainerComponent>
-       
-     
-     
-             
-        
-    <telerik:CardFooterComponent runat="server">
-            <a href="Default.aspx"><< Back to Home</a>
+        <div class="form-group">
+            <label>Portal</label>
+            <asp:DropDownList ID="ddlPortal" runat="server" CssClass="form-control">
+                <asp:ListItem Text="Customer Portal" Value="Customer" />
+                <asp:ListItem Text="Admin Portal" Value="Admin" />
+            </asp:DropDownList>
+        </div>
+
+        <div class="form-group">
+            <label>User Name</label>
+            <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" />
+        </div>
+
         <br />
-        <br />
-    </telerik:CardFooterComponent>
-</telerik:RadCard>
-
-    
+        <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
+        <br /><br />
+        <a href="UserRegistration.aspx">Customer Sign Up</a> |
+        <a href="AdminRegistration.aspx">Admin Registration</a> |
+        <a href="AdminLogin.aspx">Admin Login</a>
+    </div>
 </asp:Content>
 
 
