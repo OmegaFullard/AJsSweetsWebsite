@@ -4,6 +4,10 @@
     <h3>Order Confirmation / Receipt</h3>
     <asp:Label ID="lblHeader" runat="server"></asp:Label>
 
+    <div style="margin:10px 0;">
+        <asp:HyperLink ID="lnkPrintInvoice" runat="server" CssClass="btn btn-primary" Text="Print Invoice" />
+    </div>
+
     <asp:GridView ID="gvReceiptItems" runat="server" AutoGenerateColumns="False" CssClass="table">
         <Columns>
             <asp:BoundField DataField="ProductName" HeaderText="Item" />

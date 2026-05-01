@@ -12,6 +12,8 @@ public partial class OrderConfirmation : System.Web.UI.Page
         int orderId;
         if (!int.TryParse(Request.QueryString["orderId"], out orderId)) return;
 
+        lnkPrintInvoice.NavigateUrl = "~/PrintInvoice.aspx?orderId=" + orderId;
+
         string cs = ConfigurationManager.ConnectionStrings["AJs_SweetsConnectionString"].ConnectionString;
 
         using (var con = new SqlConnection(cs))

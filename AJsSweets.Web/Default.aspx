@@ -35,8 +35,8 @@ Width: 100%;
             <telerik:LayoutRow>
                 <Columns>
                     <telerik:LayoutColumn HiddenMd="true" HiddenSm="true" HiddenXs="true">
-                        <h4>Seasonal Items </h4>
-                        <center>Check out our new Halloween Treats!!!</center>
+                        <h4>Popular Items </h4>
+                        <center>Check out our new Treats!!!</center>
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>
@@ -46,11 +46,11 @@ Width: 100%;
 
   <div class="scroll-container">
      
-      <img src="images/halloweencc.png" class="d-block w-100" alt="halloween cupcakes"/>
+      <img src="images/oreocheesecake.png" class="d-block w-100" alt="Oreo Cheesecake"/>
   
-      <img src="images/pumpkinpie.png" class="d-block w-100" alt="pumpkin pie"/>
+      <img src="images/strawcake.png" class="d-block w-100" alt="Strawberry Cake"/>
   
-      <img src="images/halloweencc2.png" class="d-block w-100" alt="halloween cookies"/>
+      <img src="images/oatmealraisin.png" class="d-block w-100" alt="Oatmeal Raisin Cookies"/>
    
     
   
@@ -64,7 +64,7 @@ Width: 100%;
                                     <br />
                                     <br />
                         <h4>Coming Soon!!</h4>
-                        <p><strong>Please stay tuned for our Christmas themed sweets</strong></p>
+                        <p><strong>Please stay tuned for our Memorial Day themed sweets</strong></p>
                         <p>All of your favorite holiday desserts in one location.</p>
  
                        

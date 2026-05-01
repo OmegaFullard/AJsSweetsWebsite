@@ -5,39 +5,75 @@
 
 <asp:Content ID="ContentMain" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <div class="container" style="max-width:520px;">
+          <div class="py-5 text-center">
+ <a href="index.aspx"><img class="d-block mx-auto mb-4" src="images/ajslogo.png" alt="" width="72" height="57"/></a>
+ <h2>AJ's Sweets</h2>
         <h3>Admin Registration</h3>
         <hr />
 
         <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
-
+              <br />
+<div class="col-md-6">
+         
         <div class="form-group">
             <label>Admin ID</label>
             <asp:TextBox ID="txtAdminId" runat="server" CssClass="form-control" />
         </div>
-
+    </div>
+              <div class="col-md-6">
         <div class="form-group">
             <label>Full Name</label>
             <asp:TextBox ID="txtFullName" runat="server" CssClass="form-control" />
         </div>
-
+              </div>
+              <div class="col-md-6">
         <div class="form-group">
             <label>Email</label>
             <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" />
         </div>
-
+</div>
+              <div class="col-md-6">
         <div class="form-group">
             <label>Password</label>
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" />
         </div>
-
+                  </div>
+              <div class="col-md-6">
         <div class="form-group">
             <label>Confirm Password</label>
             <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control" />
         </div>
+                  </div>
+                    <br/>
+<br/>
+                <div class="col-md-12">
+                    <div class="col-md-offset-2 col-md-10">
+                       
+                    </div>
+                </div>
+                
+
+    
+   <div class="col-lg-6 col-xxl-4 my-5 mx-auto">
+  <div class="d-grid gap-2">
 
         <br />
+     
         <asp:Button ID="btnRegister" runat="server" Text="Create Admin Account" CssClass="btn btn-primary"
             OnClick="btnRegister_Click" />
-        <a href="AdminLogin.aspx" class="btn btn-link">Back to Admin Login</a>
+      </div>
+  </div>
+         </div>
+         <section>
+     <p>
+      <a href="AdminLogin.aspx" class="btn btn-link">Back to Admin Login</a>
+        <br />         
+If you already have an account.
+     </p>
+ </section>
+     <br />
+     <br />
+       <a href="default.aspx"><< Back to Home</a>
+ <br />
     </div>
 </asp:Content>

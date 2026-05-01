@@ -1,5 +1,8 @@
+using DocumentFormat.OpenXml.Presentation;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Web.UI.WebControls;
 
 public partial class Cart : System.Web.UI.Page
 {
@@ -10,32 +13,74 @@ public partial class Cart : System.Web.UI.Page
 
     private void BindCart()
     {
-        gvCart.DataSource = CartManager.GetCart().ToList();
-        gvCart.DataBind();
+        List<CartItem> cartItems = CartManager.GetCart();
+
+        if (cartItems.Count > 0)
+        {
+            pnlEmptyCart.Visible = false;
+            pnlCartItems.Visible = true;
+            gvCart.DataSource = cartItems;
+            gvCart.DataBind();
+        }
+        else
+        {
+            pnlEmptyCart.Visible = true;
+            pnlCartItems.Visible = false;
+        }
     }
 
-    protected void gvCart_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
+    protected void gvCart_RowDataBound(object sender, GridViewRowEventArgs e)
     {
-        if (e.CommandName == "RemoveItem")
+        if (e.Row.RowType == DataControlRowType.Footer)
         {
-            CartManager.RemoveItem(Convert.ToInt32(e.CommandArgument));
+            List<CartItem> cartItems = CartManager.GetCart();
+            decimal grandTotal = cartItems.Sum(item => item.LineTotal);
+
+            Label lblGrandTotal = (Label)e.Row.FindControl("lblGrandTotal");
+            if (lblGrandTotal != null)
+            {
+                lblGrandTotal.Text = grandTotal.ToString("C");
+            }
+        }
+    }
+
+    protected void gvCart_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        int productId = Convert.ToInt32(e.CommandArgument);
+        List<CartItem> cartItems = CartManager.GetCart();
+        CartItem item = cartItems.FirstOrDefault(i => i.ProductId == productId);
+
+        if (item != null)
+        {
+            switch (e.CommandName)
+            {
+                case "Increase":
+                    item.Quantity++;
+                    break;
+
+                case "Decrease":
+                    if (item.Quantity > 1)
+                    {
+                        item.Quantity--;
+                    }
+                    else
+                    {
+                        CartManager.RemoveItem(productId);
+                    }
+                    break;
+
+                case "Remove":
+                    CartManager.RemoveItem(productId);
+                    break;
+            }
+
             BindCart();
         }
     }
 
-    protected void btnUpdate_Click(object sender, EventArgs e)
+    protected void btnClearCart_Click(object sender, EventArgs e)
     {
-        var cart = CartManager.GetCart();
-        foreach (System.Web.UI.WebControls.GridViewRow row in gvCart.Rows)
-        {
-            int productId = Convert.ToInt32(gvCart.DataKeys[row.RowIndex].Value);
-            var txtQty = (System.Web.UI.WebControls.TextBox)row.FindControl("txtQty");
-            int qty;
-            if (!int.TryParse(txtQty.Text, out qty) || qty <= 0) qty = 1;
-
-            var item = cart.FirstOrDefault(x => x.ProductId == productId);
-            if (item != null) item.Quantity = qty;
-        }
+        CartManager.Clear();
         BindCart();
     }
 

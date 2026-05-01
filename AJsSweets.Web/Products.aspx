@@ -262,30 +262,74 @@
         </Fields>
     </asp:DetailsView>
 
+   </div>
+<div class="container py-3">
+    <hr />
+    <h4><strong>Products</strong></h4>
+
+    <asp:GridView ID="gvCatalog" runat="server"
+        CssClass="table table-striped table-bordered"
+        AutoGenerateColumns="False"
+        DataSourceID="dsProducts"
+        DataKeyNames="ProductId"
+        OnRowCommand="gvCatalog_RowCommand"
+        EmptyDataText="No products found.">
+        <Columns>
+            <asp:BoundField DataField="ProductName" HeaderText="Product" />
+            <asp:BoundField DataField="Category" HeaderText="Category" />
+            <asp:BoundField DataField="UnitDescription" HeaderText="Description" />
+            <asp:BoundField DataField="Price" HeaderText="Price" DataFormatString="{0:C}" />
+            <asp:TemplateField HeaderText="Qty">
+                <ItemTemplate>
+                    <asp:TextBox ID="txtQty" runat="server" Text="1" Width="60px" />
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Cart">
+                <ItemTemplate>
+                    <asp:LinkButton ID="btnAddToCart" runat="server"
+                        CssClass="btn btn-sm btn-primary me-2"
+                        CommandName="AddToCart"
+                        CommandArgument='<%# Eval("ProductId") %>'
+                        Text="Add" />
+                    <asp:LinkButton ID="btnRemoveFromCart" runat="server"
+                        CssClass="btn btn-sm btn-outline-danger"
+                        CommandName="RemoveFromCart"
+                        CommandArgument='<%# Eval("ProductId") %>'
+                        Text="Remove" />
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
+
+    <h5>Your Cart</h5>
+    <asp:GridView ID="gvCart" runat="server"
+        CssClass="table table-bordered"
+        AutoGenerateColumns="False"
+        EmptyDataText="Your cart is empty."
+        OnRowCommand="gvCart_RowCommand">
+        <Columns>
+            <asp:BoundField DataField="ProductName" HeaderText="Product" />
+            <asp:BoundField DataField="UnitDescription" HeaderText="Description" />
+            <asp:BoundField DataField="Price" HeaderText="Unit Price" DataFormatString="{0:C}" />
+            <asp:BoundField DataField="Quantity" HeaderText="Qty" />
+            <asp:BoundField DataField="LineTotal" HeaderText="Line Total" DataFormatString="{0:C}" />
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:LinkButton ID="btnRemoveLine" runat="server"
+                        CssClass="btn btn-sm btn-outline-danger"
+                        CommandName="RemoveLine"
+                        CommandArgument='<%# Eval("ProductId") %>'
+                        Text="Remove Item" />
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
+
+    <p><strong>Total: </strong><asp:Label ID="lblCartTotal" runat="server" /></p>
+
     <asp:SqlDataSource ID="dsProducts" runat="server"
         ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>"
-        SelectCommand="SELECT ProductId, ProductName, Category, UnitDescription, Price, IsActive FROM dbo.Products ORDER BY Category, ProductName"
-        InsertCommand="INSERT INTO dbo.Products (ProductName, Category, UnitDescription, Price, IsActive, CreatedUtc) VALUES (@ProductName, @Category, @UnitDescription, @Price, @IsActive, GETUTCDATE())"
-        UpdateCommand="UPDATE dbo.Products SET ProductName=@ProductName, Category=@Category, UnitDescription=@UnitDescription, Price=@Price, IsActive=@IsActive WHERE ProductId=@ProductId"
-        DeleteCommand="DELETE FROM dbo.Products WHERE ProductId=@ProductId">
-        <InsertParameters>
-            <asp:Parameter Name="ProductName" Type="String" />
-            <asp:Parameter Name="Category" Type="String" />
-            <asp:Parameter Name="UnitDescription" Type="String" />
-            <asp:Parameter Name="Price" Type="Decimal" />
-            <asp:Parameter Name="IsActive" Type="Boolean" DefaultValue="True" />
-        </InsertParameters>
-        <UpdateParameters>
-            <asp:Parameter Name="ProductName" Type="String" />
-            <asp:Parameter Name="Category" Type="String" />
-            <asp:Parameter Name="UnitDescription" Type="String" />
-            <asp:Parameter Name="Price" Type="Decimal" />
-            <asp:Parameter Name="IsActive" Type="Boolean" />
-            <asp:Parameter Name="ProductId" Type="Int32" />
-        </UpdateParameters>
-        <DeleteParameters>
-            <asp:Parameter Name="ProductId" Type="Int32" />
-        </DeleteParameters>
+        SelectCommand="SELECT ProductId, ProductName, Category, UnitDescription, Price FROM dbo.Products WHERE IsActive = 1 ORDER BY Category, ProductName">
     </asp:SqlDataSource>
 </div>
 </asp:Content>

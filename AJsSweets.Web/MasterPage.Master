@@ -53,6 +53,7 @@
     <link href="App_Themes/modals.css" rel="stylesheet" />
     <link href="App_Themes/pricing.css" rel="stylesheet" />
     <link href="App_Themes/sign-in.css" rel="stylesheet" />
+    <link href="App_Themes/checkout.css" rel="stylesheet" />
    
      <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
     <!-- Add icon library -->
@@ -67,6 +68,19 @@
      </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+
+     body {
+            margin: 0;
+            font-family: Inter,Segoe UI,system-ui,Helvetica,Arial,sans-serif;
+            /* Background updated to use ncaateamlogosbg.jpg with increased transparency and no gradient overlay */
+            background: linear-gradient(180deg, rgba(15,23,36,0.85), rgba(15,23,36,0.85)), url('/images/ajssweetsbg3.jpg') center/cover no-repeat;
+            color: #9aa7bd;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.45;
+            padding: 32px;
+        }
 
 </head>
 
@@ -245,7 +259,7 @@
 
              <center>  <p><strong>Please be sure to follow us on Social Media!</strong></p>
             <br /> 
-                  <center><a href="#" class="btn btn-primary">Follow Us!</a>  </center>
+                  <center><a href="SocialMedia.aspx" class="btn btn-primary">Follow Us!</a>  </center>
                  <br />
             <div style="height: 66px">
                 <br />
