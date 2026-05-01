@@ -171,6 +171,7 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="Customers.aspx" />
+    <Content Include="EmployeeDirectory.aspx" />
     <Content Include="Employees.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\admin.png" />
@@ -201,35 +202,7 @@
     <Content Include="UserViewProfile.aspx" />
     <Content Include="webReportDesigner1.html" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="Grid.aspx" />
-    <Content Include="images\Chrysanthemum.jpg" />
-    <Content Include="images\Desert.jpg" />
-    <Content Include="images\Hydrangeas.jpg" />
-    <Content Include="images\Jellyfish.jpg" />
-    <Content Include="images\Koala.jpg" />
-    <Content Include="images\Lighthouse.jpg" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\Penguins.jpg" />
-    <Content Include="images\Thumbnails\Chrysanthemum.jpg" />
-    <Content Include="images\Thumbnails\Desert.jpg" />
-    <Content Include="images\Thumbnails\Hydrangeas.jpg" />
-    <Content Include="images\Thumbnails\Jellyfish.jpg" />
-    <Content Include="images\Thumbnails\Koala.jpg" />
-    <Content Include="images\Thumbnails\Lighthouse.jpg" />
-    <Content Include="images\Thumbnails\Penguins.jpg" />
-    <Content Include="images\Thumbnails\Tulips.jpg" />
-    <Content Include="images\Tulips.jpg" />
-    <Content Include="ListView.aspx" />
-    <Content Include="ProfitReport.aspx" />
-    <Content Include="UserRegistration.aspx" />
-    <Content Include="scripts\scripts.js" />
-    <Content Include="styles\base.css" />
-    <Content Include="styles\default.css" />
-    <Content Include="styles\grid.css" />
-    <Content Include="styles\listView.css" />
-  </ItemGroup>
+
   <ItemGroup>
     <Compile Include="Article.cs" />
     <Compile Include="Controllers\ReportDesignerController.cs" />
@@ -247,6 +220,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDirectory.aspx.cs">
+      <DependentUpon>EmployeeDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDirectory.aspx.designer.cs">
+      <DependentUpon>EmployeeDirectory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employees.aspx.cs">
       <DependentUpon>Employees.aspx</DependentUpon>
@@ -410,4 +390,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-</Project>
+</Project></Project>

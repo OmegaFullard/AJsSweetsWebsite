@@ -121,7 +121,11 @@
         <asp:MenuItem Text="About" NavigateUrl="About.aspx" />
         <asp:MenuItem Text="Directions" NavigateUrl="Directions.aspx" />
         <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />
+        <asp:MenuItem Text="Employees" NavigateUrl="EmployeeDirectory.aspx" />
         <asp:MenuItem Text="Social Media" NavigateUrl="SocialMedia.aspx" />
+        <asp:MenuItem Text="Support" NavigateUrl="Support.aspx" />
+<asp:MenuItem Text="Privacy Policy" NavigateUrl="Privacy.aspx" />
+<asp:MenuItem Text="Terms and Conditions" NavigateUrl="Terms.aspx" />
     </asp:MenuItem>
 </Items>
             </asp:Menu>
