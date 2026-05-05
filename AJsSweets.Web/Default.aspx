@@ -36,7 +36,7 @@ Width: 100%;
                 <Columns>
                     <telerik:LayoutColumn HiddenMd="true" HiddenSm="true" HiddenXs="true">
                         <h4>Popular Items </h4>
-                        <center>Check out our new Treats!!!</center>
+                      
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>

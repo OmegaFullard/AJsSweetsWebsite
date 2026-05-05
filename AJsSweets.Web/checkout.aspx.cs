@@ -202,7 +202,7 @@ public partial class Checkout : System.Web.UI.Page
             if (string.IsNullOrEmpty(smtpServer)) return;
 
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-            mail.From = new System.Net.Mail.MailAddress(fromEmail, "Pipe Dreams Developers");
+            mail.From = new System.Net.Mail.MailAddress(fromEmail, "AJs Sweets");
             mail.To.Add(order.Email);
             mail.Subject = string.Format("Order Confirmation - Order #{0}", order.OrderId);
             mail.IsBodyHtml = true;

@@ -10,7 +10,7 @@
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/berryjam.png" class="card-img-top" alt="Homemade jam" style="height:220px; object-fit:cover;" />
+                    <img src="images/berryjam.png" class="card-img-top" alt="Homemade jam" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Jams</h5>
                         <p class="card-text">Apple, Berry, Grape, and Peach seasonal flavors.</p>
@@ -21,7 +21,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/applepie.png" class="card-img-top" alt="Fresh pie" style="height:220px; object-fit:cover;" />
+                    <img src="images/applepie.png" class="card-img-top" alt="Fresh pie" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Pies</h5>
                         <p class="card-text">Classic pies including Apple, Berry, Pecan, and Pumpkin.</p>
@@ -32,7 +32,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/chocchip.png" class="card-img-top" alt="Chocolate chip cookies" style="height:220px; object-fit:cover;" />
+                    <img src="images/chocchip.png" class="card-img-top" alt="Chocolate chip cookies" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Cookies</h5>
                         <p class="card-text">Chocolate Chip, Oatmeal Raisin, Sugar, and Peanut Butter.</p>
@@ -43,7 +43,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/brownies.png" class="card-img-top" alt="Chocolate brownies" style="height:220px; object-fit:cover;" />
+                    <img src="images/brownies.png" class="card-img-top" alt="Chocolate brownies" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Brownies</h5>
                         <p class="card-text">Plain, Pecan, Walnut, and Assorted brownie trays.</p>
@@ -54,7 +54,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/choccake.png" class="card-img-top" alt="Chocolate cake" style="height:220px; object-fit:cover;" />
+                    <img src="images/choccake.png" class="card-img-top" alt="Chocolate cake" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Cakes</h5>
                         <p class="card-text">Chocolate, Confetti, Red Velvet, and Strawberry cakes.</p>
@@ -65,7 +65,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/cupcakesassort.png" class="card-img-top" alt="Assorted cupcakes" style="height:220px; object-fit:cover;" />
+                    <img src="images/cupcakesassort.png" class="card-img-top" alt="Assorted cupcakes" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Cupcakes</h5>
                         <p class="card-text">Holiday, Chocolate, Red Velvet, and Assorted cupcake packs.</p>
@@ -76,7 +76,7 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="images/hotchoc.png" class="card-img-top" alt="Hot chocolate and sweets" style="height:220px; object-fit:cover;" />
+                    <img src="images/hotchoc.png" class="card-img-top" alt="Hot chocolate and sweets" style="height:220px; width:220px; object-fit:cover;" />
                     <div class="card-body">
                         <h5 class="card-title">Other Sweets</h5>
                         <p class="card-text">Hot Chocolate, Gingerbread Kits, Holiday Cookies & Cupcakes, and Assorted Treats.</p>

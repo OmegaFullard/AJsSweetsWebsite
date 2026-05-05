@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        UpdateCartCount();
     }
 
     public void AddToCart(CartItem item)

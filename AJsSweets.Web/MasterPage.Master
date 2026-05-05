@@ -23,7 +23,7 @@
     </asp:PlaceHolder>
 
  
-    
+    <link href="styles/styles.css" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="styles/base.css" rel="stylesheet" />
     <link href="styles/default.css" rel="stylesheet" />
@@ -91,65 +91,65 @@
         <div class="header">
        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
            </div>
-              <!-- Main Nav -->
-      <div class="topnav menu">
-            <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
-               <Items>
-    <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
 
-    <asp:MenuItem Text="Shop">
-        <asp:MenuItem Text="Products" NavigateUrl="Products.aspx" />
-        <asp:MenuItem Text="Pricing" NavigateUrl="Pricing.aspx" />
-        <asp:MenuItem Text="Cart" NavigateUrl="Cart.aspx" />
-        <asp:MenuItem Text="Checkout" NavigateUrl="Checkout.aspx" />
-    </asp:MenuItem>
+    <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end align-items-center flex-wrap gap-2">
+            <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Search..." MaxLength="100" style="max-width: 240px;"></asp:TextBox>
+            <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-outline-primary" OnClick="btnSearch_Click" />
+            <!-- Shopping Cart Icon -->
+            <asp:HyperLink ID="lnkCart" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-outline-info position-relative" ToolTip="View Shopping Cart">
+                <i class="fa fa-shopping-cart"></i> Cart
+                <asp:Label ID="lblCartCount" runat="server" CssClass="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" Visible="false">
+                    0
+                </asp:Label>
+            </asp:HyperLink>
+        </div>
+    </div>
 
-    <asp:MenuItem Text="Account">
-        <asp:MenuItem Text="Login" NavigateUrl="Login.aspx" />
-        <asp:MenuItem Text="Register" NavigateUrl="UserRegistration.aspx" />
-        <asp:MenuItem Text="Profile" NavigateUrl="UserViewProfile.aspx" />
-    </asp:MenuItem>
+          <!-- Main Nav -->
+  <div class="topnav menu">
+        <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
+           <Items>
+<asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
 
-    <asp:MenuItem Text="Admin">
-        <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx" />
-        <asp:MenuItem Text="Admin Registration" NavigateUrl="AdminRegistration.aspx" />
-        <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx" />
-        <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx" />
-    </asp:MenuItem>
+<asp:MenuItem Text="Shop">
+    <asp:MenuItem Text="Products" NavigateUrl="Products.aspx" />
+    <asp:MenuItem Text="Pricing" NavigateUrl="Pricing.aspx" />
+    <asp:MenuItem Text="Cart" NavigateUrl="Cart.aspx" />
+    <asp:MenuItem Text="Checkout" NavigateUrl="Checkout.aspx" />
+</asp:MenuItem>
 
-    <asp:MenuItem Text="Information">
-        <asp:MenuItem Text="About" NavigateUrl="About.aspx" />
-        <asp:MenuItem Text="Directions" NavigateUrl="Directions.aspx" />
-        <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />
-        <asp:MenuItem Text="Employees" NavigateUrl="EmployeeDirectory.aspx" />
-        <asp:MenuItem Text="Social Media" NavigateUrl="SocialMedia.aspx" />
-        <asp:MenuItem Text="Support" NavigateUrl="Support.aspx" />
+<asp:MenuItem Text="Account">
+    <asp:MenuItem Text="Login" NavigateUrl="Login.aspx" />
+    <asp:MenuItem Text="Register" NavigateUrl="UserRegistration.aspx" />
+    <asp:MenuItem Text="Profile" NavigateUrl="UserViewProfile.aspx" />
+</asp:MenuItem>
+
+<asp:MenuItem Text="Admin">
+    <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx" />
+    <asp:MenuItem Text="Admin Registration" NavigateUrl="AdminRegistration.aspx" />
+    <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx" />
+    <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx" />
+</asp:MenuItem>
+
+<asp:MenuItem Text="Information">
+    <asp:MenuItem Text="About" NavigateUrl="About.aspx" />
+    <asp:MenuItem Text="Directions" NavigateUrl="Directions.aspx" />
+    <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />
+    <asp:MenuItem Text="Employees" NavigateUrl="EmployeeDirectory.aspx" />
+    <asp:MenuItem Text="Social Media" NavigateUrl="SocialMedia.aspx" />
+    <asp:MenuItem Text="Support" NavigateUrl="Support.aspx" />
 <asp:MenuItem Text="Privacy Policy" NavigateUrl="Privacy.aspx" />
 <asp:MenuItem Text="Terms and Conditions" NavigateUrl="Terms.aspx" />
-    </asp:MenuItem>
+</asp:MenuItem>
 </Items>
-            </asp:Menu>
+        </asp:Menu>
 </div>
-           </div>
-        <br />
-                <br />     
+       </div>
+    <br />
+            <br />     
         
-         <div class="text-end">
-       <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control form-control-dark text-bg-light" placeholder="Search..." MaxLength="100"></asp:TextBox>
-     <br />
-      <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-outline-primary" OnClick="btnSearch_Click" />
-     <br />
-     <br />
-     <!-- Shopping Cart Icon -->
-     <asp:HyperLink ID="lnkCart" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-outline-info position-relative me-2" ToolTip="View Shopping Cart">
-         <i class="fa fa-shopping-cart"></i> Cart
-         <asp:Label ID="lblCartCount" runat="server" CssClass="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" Visible="false">
-             0
-         </asp:Label>
-     </asp:HyperLink>
-     <br />
- 
-  </div>
+        
 
 					   
         <div class="container">

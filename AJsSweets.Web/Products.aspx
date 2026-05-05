@@ -9,8 +9,8 @@
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
       
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet"/>
-
+   
+    <link href="App_Themes/pricing.css" rel="stylesheet" />
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check" viewBox="0 0 16 16">
     <title>Checkout</title>
@@ -30,419 +30,99 @@
       <hr />
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       
-     <center> <h4>Sweets and Treats: "Let us satisfy your sweettooth"</h4></center>
+     <center><h4>Sweets and Treats: "Let us satisfy your sweettooth"</h4></center>
+        <p class="text-muted mb-0">Browse each product card to view the image, description, price, and adjust the quantity before adding items to your cart.</p>
     </div>
 
     <hr />
-        </div>
-                     
-               <!-- Success Message -->
- <asp:Panel ID="pnlSuccess" runat="server" Visible="false" CssClass="alert alert-success alert-dismissible fade show" role="alert">
-     <i class="fa fa-check-circle"></i> <strong>Success!</strong> <asp:Label ID="lblSuccessMessage" runat="server"></asp:Label> has been added to your cart.
-     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
- </asp:Panel>         
-                    
 
-    <br />
-    
-       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Jelly</h4>
-            
-          </div>
-            <br />
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$5<small class="text-body-secondary fw-light">per jar</small></h4>
-              
-            <ul class="list-unstyled mt-3 mb-4">
+    <!-- Success Message -->
+    <asp:Panel ID="pnlSuccess" runat="server" Visible="false" CssClass="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fa fa-check-circle"></i> <strong>Success!</strong> <asp:Label ID="lblSuccessMessage" runat="server"></asp:Label> has been added to your cart.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </asp:Panel>
 
-              <li>Apple Jelly</li>
-                
-             </ul>
-               <asp:Button ID="btnApple" runat="server" Text="Apple Jelly" 
-     CssClass="w-100 btn btn-lg btn-outline-primary" 
-     style="color: #f0f0f5;" 
-     OnClick="btnAddToCart_Click" 
-     CommandArgument="Apple Jelly" />
-             
-                <ul class="list-unstyled mt-3 mb-4">
-             <li>Grape Jelly</li>
-                       </ul>
-                        <asp:Button ID="btnGrape" runat="server" Text="Grape Jelly" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Grape Jelly" />
-                 
-               
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Strawberry Jelly</li>
-                             </ul>
-                        <asp:Button ID="btnStraw" runat="server" Text="Strawberry Jelly" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Strawberry Jelly" />
-                        
-                        
-                           
-                            <ul class="list-unstyled mt-3 mb-4">
-                <li>Peach Jelly</li>
-                                   </ul>
-                        <asp:Button ID="btnPeach" runat="server" Text="Peach Jelly" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color:#f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Peach Jelly" />
-                                 
-                  </div>
+    <asp:Repeater ID="rptProducts" runat="server" OnItemCommand="rptProducts_ItemCommand">
+        <HeaderTemplate>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        </HeaderTemplate>
+        <ItemTemplate>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <asp:Image ID="imgProduct" runat="server"
+                        ImageUrl='<%# Eval("ImageUrl") %>'
+                        AlternateText='<%# Eval("ProductName") %>'
+                        CssClass="card-img-top p-3"
+                        Style="height: 240px; width: 240px; object-fit: cover;" />
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title mb-2"><%# Eval("ProductName") %></h4>
+                        <p class="text-muted flex-grow-1"><%# Eval("UnitDescription") %></p>
+                        <div class="fs-4 fw-semibold mb-3"><%# string.Format("{0:C}", Eval("UnitPrice")) %></div>
+
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                                <asp:Button ID="btnDecrease" runat="server" Text="-"
+                                    CssClass="btn btn-outline-secondary"
+                                    CommandName="Decrease"
+                                    CommandArgument='<%# Eval("ProductId") %>'
+                                    CausesValidation="false" />
+                                <asp:Label ID="lblQuantity" runat="server"
+                                    CssClass="px-3 py-2 border rounded text-center fw-semibold"
+                                    Text='<%# GetSelectedQuantity(Convert.ToInt32(Eval("ProductId"))).ToString() %>' />
+                                <asp:Button ID="btnIncrease" runat="server" Text="+"
+                                    CssClass="btn btn-outline-secondary"
+                                    CommandName="Increase"
+                                    CommandArgument='<%# Eval("ProductId") %>'
+                                    CausesValidation="false" />
+                            </div>
+                            <br />
+                            <br />
+                            <div class="d-grid gap-2">
+                                <asp:Button ID="btnAddToCart" runat="server" Text="Add to Cart"
+                                    CssClass="btn btn-primary"
+                                    CommandName="Add"
+                                    CommandArgument='<%# Eval("ProductId") %>' />
+      
+                                <asp:Button ID="btnCancel" runat="server" Text="Cancel"
+                                    CssClass="btn btn-outline-danger"
+                                    CommandName="Cancel"
+                                    CommandArgument='<%# Eval("ProductId") %>'
+                                    CausesValidation="false" />
+                                 <br />
+ <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-                       </div>
-     
-     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pies</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">per pie</small></h4>
-         
-                     
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Apple Pie</li>
-                        <asp:Button ID="btnApplePie" runat="server" Text="Apple Pie" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Apple Pie" />
-                          </ul>
-						  
-						
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Berry Pie</li>
-                        <asp:Button ID="btnBerryPie" runat="server" Text="Berry Pie" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Berry Pie" />
-                          </ul>
-						  
-			
-						    
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Pecan Pie</li>
-                        <asp:Button ID="btnPecanPie" runat="server" Text="Pecan Pie" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Pecan Pie" />
-                          </ul>
-						  
-					
-						     <ul class="list-unstyled mt-3 mb-4">
-                <li>Pumpkin Pie</li>
-                        <asp:Button ID="btnPumpkinPie" runat="server" Text="Pumpkin Pie" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Pumpkin Pie" />
-                          </ul>
-
-
-                  </div>
+        </ItemTemplate>
+        <FooterTemplate>
             </div>
-          </div>
-                       </div>
-            
+        </FooterTemplate>
+    </asp:Repeater>
 
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Cookies</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">per Dozen</small></h4>
-            <br/>
-                  
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Chocolate Chip Cookies</li>
-                        <asp:Button ID="btnChocChip" runat="server" Text="Chocolate Chip" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Chocolate Chip Cookie" />
-                          </ul>
-						  
-						  
-						          
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Oatmeal Raisin</li>
-                        <asp:Button ID="btnOatmealRaisin" runat="server" Text="Oatmeal Raisin" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Oatmeal Raisin Cookie" />
-                          </ul>
-						  
-			
-						         
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Snickerdoodle</li>
-                        <asp:Button ID="btnSnickerDoodle" runat="server" Text="Snickerdoodle" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Snickerdoodle Cookie" />
-                          </ul>
-						  
-						
-						     <ul class="list-unstyled mt-3 mb-4">
-                <li>Peanut Butter</li>
-                        <asp:Button ID="btnPeanutButter" runat="server" Text="Peanut Butter" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Peanut Butter Cookie" />
-                          </ul>
+    <center>
+        <asp:HyperLink ID="CartLink" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-success btn-lg mt-4" Visible="false">
+            <i class="fa fa-shopping-cart"></i> View Cart & Checkout
+        </asp:HyperLink>
+    </center>
 
-
-                  </div>
-            </div>
-          </div>
-                       </div>
-            
-
-                   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Brownies</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">per dozen</small></h4>
-
-         
-                     
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Plain Brownie</li>
-                        <asp:Button ID="btnBrownie" runat="server" Text="Brownie" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Plain Brownie" />
-                          </ul>
-						  
-						  
-						         
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Pecan Brownie</li>
-                        <asp:Button ID="btnPecanBrownie" runat="server" Text="Pecan" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Pecan" />
-                          </ul>
-						  
-			
-						        
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Walnut Brownie</li>
-                        <asp:Button ID="btnWalnutBrownie" runat="server" Text="Walnut" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Walnut" />
-                          </ul>
-						  
-						
-						     <ul class="list-unstyled mt-3 mb-4">
-                <li>Assortment</li>
-                        <asp:Button ID="btnBrownieAssort" runat="server" Text="Assortment" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Brownie Assortment" />
-                          </ul>
-
-
-                  </div>
-            </div>
-          </div>
-                       </div>
-
-
-
-                   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Cake</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$25<small class="text-body-secondary fw-light">per cake</small></h4>
-
-              
-                       
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Chocolate Cake</li>
-                        <asp:Button ID="btnChocCake" runat="server" Text="Chocolate" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Chocolate Cake" />
-                          </ul>
-						  
-						  
-						          
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Lemon Cake</li>
-                        <asp:Button ID="btnLemonCake" runat="server" Text="Lemon" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Lemon Cake" />
-                          </ul>
-						  
-			
-						         
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Red Velvet Cake</li>
-                        <asp:Button ID="btnRedVelvet" runat="server" Text="Red Velvet" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Red Velvet" />
-                          </ul>
-						  
-						  
-						     <ul class="list-unstyled mt-3 mb-4">
-                <li>Strawberry Shortcake</li>
-                        <asp:Button ID="btnStrawberry" runat="server" Text="Strawberry" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Strawberry Shortcake" />
-                          </ul>
-
-
-						     <ul class="list-unstyled mt-3 mb-4">
-                <li>Vanilla Cake</li>
-                        <asp:Button ID="btnVanilla" runat="server" Text="Vanilla Cake" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Vanilla" />
-                          </ul>
-
-
-                  </div>
-            </div>
-          </div>
-                       </div>
-
-                   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Cupcakes</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$25<small class="text-body-secondary fw-light">per dozen</small></h4>
-
-                         <ul class="list-unstyled mt-3 mb-4">
-                <li>Patriotic Cupcake</li>
-                        <asp:Button ID="btnPatrioticCupcakes" runat="server" Text="Patriotic" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Patriotic Cupcake" />
-                          </ul>
-  
-                         <ul class="list-unstyled mt-3 mb-4">
-                <li>Chocolate Cupcake</li>
-                        <asp:Button ID="Button2" runat="server" Text="Chocolate" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Chocolate Cupcake" />
-                          </ul>
-          
-                         <ul class="list-unstyled mt-3 mb-4">
-                <li>Red Velvet Cupcake</li>
-                        <asp:Button ID="btnRedVelvetCupcakes" runat="server" Text="Red Velvet" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Red Velvet Cupcake" />
-                          </ul>
-           
-                      <ul class="list-unstyled mt-3 mb-4">
-                <li>Confetti Cupcake</li>
-                        <asp:Button ID="btnConfettiCupcakes" runat="server" Text="Confetti" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Confetti Cupcake" />
-                          </ul>
-              </div>
-            </div>
-          </div>
-                       </div>
-		     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Gift Cards</h4>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title pricing-card-title">$25+<small class="text-body-secondary fw-light">each</small></h4>
-               
-                          <ul class="list-unstyled mt-3 mb-4">
-                <li>Gift Card</li>
-                        <asp:Button ID="btnGiftCard" runat="server" Text="Gift Card" 
-CssClass="w-100 btn btn-lg btn-outline-primary" 
-style="color: #f0f0f5;" 
-OnClick="btnAddToCart_Click" 
-CommandArgument="Gift Card" />
-                          </ul>
-		<br />
-              <br />
-               <a href="mailto:Sales@example.com" class="w-100 btn btn-lg btn-outline-primary">Questions</a>
-</div>
-            </div>
-          </div>
-                 </div>
-     
-
-   <center>
-    <asp:HyperLink ID="lnkViewCart" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-success btn-lg" Visible="false">
-        <i class="fa fa-shopping-cart"></i> View Cart & Checkout
-    </asp:HyperLink>
-  
-</center>
-         <br/>
+    <br/>
     <hr />
-         <div class="container">
-   <p class="float-end mb-1">
-     <a href="#">Back to top</a>
-   </p>
-   
- </div>
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
 
-
-   <div class="row">
-     <div class="col-12 col-md">
-       <img src="images/ajslogo.png" alt="logo" style="width:50px;height:50px;" />
-       <small class="d-block mb-3 text-body-secondary">&copy; 2008-</small>
-     </div>
-       <br />
+    <div class="row">
+        <div class="col-12 col-md">
+            <img src="images/ajslogo.png" alt="logo" style="width:50px;height:50px;" />
+            <small class="d-block mb-3 text-body-secondary">&copy; 2008-</small>
+        </div>
+        <br />
+    </div>
 </div>
+<script src="scripts/bootstrap.bundle.min.js"></script>
 
-
-       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </asp:Content>
