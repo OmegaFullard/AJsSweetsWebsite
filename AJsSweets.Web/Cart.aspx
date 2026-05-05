@@ -40,7 +40,7 @@
                                                     AlternateText='<%# Eval("ProductName") %>' />
                                                 <div>
                                                     <strong><%# Eval("ProductName") %></strong><br />
-                                                    <small class="text-muted"><%# Eval("Description") %></small>
+                                                    <small class="text-muted"><%# Eval("UnitDescription") %></small>
                                                 </div>
                                             </div>
                                         </ItemTemplate>

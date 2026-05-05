@@ -69,19 +69,19 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-
-     body {
+    <%--<style>
+        body {
             margin: 0;
-            font-family: Inter,Segoe UI,system-ui,Helvetica,Arial,sans-serif;
-            /* Background updated to use ncaateamlogosbg.jpg with increased transparency and no gradient overlay */
-            background: linear-gradient(180deg, rgba(15,23,36,0.85), rgba(15,23,36,0.85)), url('/images/ajssweetsbg3.jpg') center/cover no-repeat;
+            font-family: Inter, Segoe UI, system-ui, Helvetica, Arial, sans-serif;
+            /* Background updated to use ajssweetsbg3 with increased transparency and no gradient overlay */
+            background: linear-gradient(180deg, rgba(15, 23, 36, 0.85), rgba(15, 23, 36, 0.85)), url('/images/ajssweetsbg3.jpg') center/cover no-repeat;
             color: #9aa7bd;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             line-height: 1.45;
             padding: 32px;
         }
-
+    </style>--%>
 </head>
 
 <body>
@@ -132,7 +132,25 @@
 </div>
            </div>
         <br />
-                          
+                <br />     
+        
+         <div class="text-end">
+       <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control form-control-dark text-bg-light" placeholder="Search..." MaxLength="100"></asp:TextBox>
+     <br />
+      <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-outline-primary" OnClick="btnSearch_Click" />
+     <br />
+     <br />
+     <!-- Shopping Cart Icon -->
+     <asp:HyperLink ID="lnkCart" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-outline-info position-relative me-2" ToolTip="View Shopping Cart">
+         <i class="fa fa-shopping-cart"></i> Cart
+         <asp:Label ID="lblCartCount" runat="server" CssClass="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" Visible="false">
+             0
+         </asp:Label>
+     </asp:HyperLink>
+     <br />
+ 
+  </div>
+
 					   
         <div class="container">
     <!-- Main Content -->
