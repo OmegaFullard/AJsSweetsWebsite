@@ -4,44 +4,26 @@
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content0" ContentPlaceHolderID="head" Runat="Server">
-    <link href="styles/default.css" rel="stylesheet" />
-    <link href="styles/base.css" rel="stylesheet" />
-    <link href="styles/styles.css" rel="stylesheet" />
-
-    <link rel="Stylesheet" href="https://cdn.jsdeliver.net/gh/openlayers.github.io@master/en/v6.2.1/css/ol.css" />
-<style>
-.map {
-Height: 400px;
-Width: 100%;
-}
-
-</style>
+  
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <telerik:RadPageLayout runat="server" ID="RadPageLayout1">
-        <Rows>
-            <telerik:LayoutRow>
-                <Columns>
-                    <telerik:LayoutColumn CssClass="jumbotron">
-                        <h1>Welcome to AJ's Sweets</h1>
-                        <h2>Place an Order
-                            <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" PostBackUrl="~/Products.aspx" />
-                        </h2>
+    <section class="about">
+        <div class="container">
+            <h1>Welcome to AJ's Sweets</h1>
+            <h2>
+                Place an Order
+                <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px"
+                    style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0"
+                    Text="Go" PostBackUrl="~/Products.aspx" />
+            </h2>
 
-                    </telerik:LayoutColumn>
-                </Columns>
-            </telerik:LayoutRow>
-            <telerik:LayoutRow>
-                <Columns>
-                    <telerik:LayoutColumn HiddenMd="true" HiddenSm="true" HiddenXs="true">
-                        <h4>Popular Items </h4>
-                      
-                    </telerik:LayoutColumn>
-                </Columns>
-            </telerik:LayoutRow>
-        </Rows>
-    </telerik:RadPageLayout>
+            <div class="row">
+                <div class="col">
+                    <h4>Popular Items</h4>
+                </div>
+            </div>
+ 
 
 
   <div class="scroll-container">
@@ -56,10 +38,8 @@ Width: 100%;
   
   
 </div>
-</asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
   
                                     <br />
                                     <br />
@@ -81,6 +61,9 @@ Width: 100%;
                         <br />
                         <br />
                      
-                   
+               </div>
+        </section>
+<br />
+    <script src="search.js"></script>                
                        
 </asp:Content>

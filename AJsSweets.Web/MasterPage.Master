@@ -3,90 +3,70 @@
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head runat="server">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon"/>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
-<link rel="manifest" href="/site.webmanifest"/>
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
 
-<meta name="msapplication-TileColor" content="#854bd1"/>
-<meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#854bd1"/>
+    <meta name="theme-color" content="#ffffff"/>
     <title>AJs Sweets</title>
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
-    
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
- 
-    <link href="styles/styles.css" rel="stylesheet" />
-     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="styles/base.css" rel="stylesheet" />
-    <link href="styles/default.css" rel="stylesheet" />
-    <link href="styles/grid.css" rel="stylesheet" />
-    <link href="styles/listView.css" rel="stylesheet" />
+    <webopt:bundlereference runat="server" path="~/Content/css" />
 
-    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
-
-    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
-
-    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
-
-    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
-    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
-     
-			     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"/>
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/"/>
-     <link href="App_Themes/Page.css" rel="stylesheet" />
+
+    <link href="App_Themes/Page.css" rel="stylesheet" />
     <link href="App_Themes/dropdowns.css" rel="stylesheet" />
     <link href="App_Themes/headers.css" rel="stylesheet" />
     <link href="App_Themes/modals.css" rel="stylesheet" />
     <link href="App_Themes/pricing.css" rel="stylesheet" />
     <link href="App_Themes/sign-in.css" rel="stylesheet" />
     <link href="App_Themes/checkout.css" rel="stylesheet" />
-   
-     <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-     <script>
-    $(document).ready(function(){
-    $('#pw').keypress(function(e){
-      if(e.keyCode==13)
-      $('#GoBtn').click();
-    });
-});
-     </script>
+    <link href="App_Themes/carousel.css" rel="stylesheet" />
+    <link href="App_Themes/checkout.css" rel="stylesheet" />
+    <link href="App_Themes/styles.css" rel="stylesheet" />
+
+    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
+    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#pw').keypress(function (e) {
+                if (e.keyCode == 13)
+                    $('#GoBtn').click();
+            });
+        });
+    </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-    <%--<style>
-        body {
-            margin: 0;
-            font-family: Inter, Segoe UI, system-ui, Helvetica, Arial, sans-serif;
-            /* Background updated to use ajssweetsbg3 with increased transparency and no gradient overlay */
-            background: linear-gradient(180deg, rgba(15, 23, 36, 0.85), rgba(15, 23, 36, 0.85)), url('/images/ajssweetsbg3.jpg') center/cover no-repeat;
-            color: #9aa7bd;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            line-height: 1.45;
-            padding: 32px;
-        }
-    </style>--%>
 </head>
-
 <body>
     <form id="form1" runat="server">
-        <div class="col-12 col-s-9">
+        <%-- Add your form content here --%>
+          <div class="col-12 col-s-9">
 
         <div class="header">
        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -295,9 +275,7 @@
 
         </div>
 <br />
-
-
-    <!-- Footer -->
+                   <!-- Footer -->
     <div class="row">
         <div class="col-md-12">
             <hr />
@@ -306,7 +284,7 @@
         </div>
     </div>
 </div>
+        <!-- End of form content -->
     </form>
-  
 </body>
 </html>

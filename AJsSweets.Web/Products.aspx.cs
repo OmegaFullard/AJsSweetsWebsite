@@ -43,7 +43,19 @@ public partial class Products : System.Web.UI.Page
                 if (item != null)
                 {
                     item.Quantity = GetSelectedQuantity(productId);
-                    ((MasterPage)Master).AddToCart(item);
+                    
+                    // Create a MasterPage.CartItem from the local CartItem
+                    var masterCartItem = new MasterPage.CartItem
+                    {
+                        ProductId = item.ProductId,
+                        ProductName = item.ProductName,
+                        Description = item.UnitDescription,
+                        Price = item.UnitPrice,
+                        Quantity = item.Quantity,
+                        ImageUrl = item.ImageUrl
+                    };
+                    
+                    MasterPage.AddToCart(masterCartItem);
                     ShowSuccessMessage(item.ProductName);
                     selections[productId] = 1;
                     UpdateCartLink();
@@ -133,7 +145,7 @@ public partial class Products : System.Web.UI.Page
 
     private void UpdateCartLink()
     {
-        List<CartItem> cartItems = ((MasterPage)Master).GetCartItems();
+        List<MasterPage.CartItem> cartItems = MasterPage.GetCartItems();
         CartLink.Visible = cartItems != null && cartItems.Count > 0;
     }
 }

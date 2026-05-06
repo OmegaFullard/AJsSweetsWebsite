@@ -12,7 +12,8 @@
                 <asp:Label ID="lblCartMessage" runat="server" ForeColor="Red"></asp:Label>
 
 
-                <asp:Panel ID="pnlEmptyCart" runat="server" Visible="false">              <div class="alert alert-info text-center">
+                <asp:Panel ID="pnlEmptyCart" runat="server" Visible="false">              
+                    <div class="alert alert-info text-center">
                         <i class="fa fa-shopping-cart fa-3x mb-3"></i>
                         <h4>Your cart is empty</h4>
                         <p>Start shopping to add items to your cart.</p>
@@ -40,7 +41,7 @@
                                                     AlternateText='<%# Eval("ProductName") %>' />
                                                 <div>
                                                     <strong><%# Eval("ProductName") %></strong><br />
-                                                    <small class="text-muted"><%# Eval("UnitDescription") %></small>
+                                                    <small class="text-muted"><%# Eval("Description") %></small>
                                                 </div>
                                             </div>
                                         </ItemTemplate>
@@ -111,7 +112,7 @@
                                 OnClientClick="return confirm('Are you sure you want to clear your cart?');" />
                         </div>
                         <div class="col-md-6 text-end">
-                            <asp:Button ID="Button1" runat="server" Text="Proceed to Checkout" 
+                            <asp:Button ID="btnCheckout" runat="server" Text="Proceed to Checkout" 
                                 CssClass="btn btn-success btn-lg" OnClick="btnCheckout_Click" />
                         </div>
                     </div>
