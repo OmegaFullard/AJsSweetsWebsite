@@ -92,17 +92,18 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         int cartCount = GetCartItemCount();
 
+        // Keep cart icon visible in the search/button area
+        lnkCart.Visible = true;
+
         if (cartCount > 0)
         {
             lblCartCount.Text = cartCount.ToString();
             lblCartCount.Visible = true;
-            lnkCart.Visible = true;
         }
         else
         {
             lblCartCount.Text = "0";
             lblCartCount.Visible = false;
-            lnkCart.Visible = false;
         }
     }
 

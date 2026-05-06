@@ -19,17 +19,8 @@
             </div>
         </div>
 
-        <asp:GridView ID="gvEmployees" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-bordered" EmptyDataText="No employees found.">
-            <Columns>
-                <asp:BoundField DataField="EmployeeID" HeaderText="ID" />
-                <asp:BoundField DataField="First Name" HeaderText="First Name" />
-                <asp:BoundField DataField="Last Name" HeaderText="Last Name" />
-                <asp:BoundField DataField="Email Address" HeaderText="Email" />
-                <asp:BoundField DataField="Phone" HeaderText="Phone" />
-                <asp:BoundField DataField="Title" HeaderText="Title" />
-                <asp:BoundField DataField="Salary" HeaderText="Salary" DataFormatString="{0:C}" />
-                <asp:CheckBoxField DataField="Still Employed" HeaderText="Still Employed" />
-            </Columns>
+        <asp:GridView ID="gvEmployees" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-bordered" EmptyDataText="No employees found." DataSourceID="SqlDataSource1">
         </asp:GridView>
+        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AJs_SweetsConnectionString2 %>' ProviderName='<%$ ConnectionStrings:AJs_SweetsConnectionString2.ProviderName %>' SelectCommand="SELECT [First_Name], [Last_Name], [Email_Address], [Phone], [EmployeeID], [Still_Employed], [Title], [Salary] FROM [Employees]"></asp:SqlDataSource>
     </div>
 </asp:Content>

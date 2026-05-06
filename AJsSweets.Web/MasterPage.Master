@@ -96,7 +96,7 @@
     <asp:MenuItem Text="Products" NavigateUrl="Products.aspx" />
     <asp:MenuItem Text="Pricing" NavigateUrl="Pricing.aspx" />
     <asp:MenuItem Text="Cart" NavigateUrl="Cart.aspx" />
-    <asp:MenuItem Text="Checkout" NavigateUrl="Checkout.aspx" />
+    <asp:MenuItem Text="Checkout" NavigateUrl="checkout.aspx" />
 </asp:MenuItem>
 
 <asp:MenuItem Text="Account">
