@@ -7,7 +7,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-6">
-                <center><img src="images/PDLogo.png" alt="company logo" style="width:250px;height:250px;" /></center>
+                <center><img src="images/ajslogo.png" alt="company logo" style="width:150px;height:150px;" /></center>
                 <h2>Contact Us</h2>
                 <p class="lead">Have a question or need assistance? Fill out the form and we'll get back to you as soon as possible.</p>
                 <br />

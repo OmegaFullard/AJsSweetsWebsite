@@ -172,7 +172,7 @@
                 <div>
                     <br />
                     <br />
-        <a href="Pricing.aspx"><< Back to Pricing</a><br />
+        <a href="Default.aspx"><< Back to Home</a><br />
     </div>
                 <div class="alert alert-info" role="alert">
                     <strong><i class="fa fa-info-circle"></i> Note:</strong> By using our website, you consent to our Privacy Policy 
