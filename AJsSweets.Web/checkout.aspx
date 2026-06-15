@@ -223,12 +223,11 @@
                         <h5 class="mb-0"><i class="fa fa-list"></i> Order Summary</h5>
                     </div>
                     <div class="card-body">
-                        <asp:Repeater ID="rptOrderItems" runat="server">
+                        <asp:Repeater ID="rptOrderItems" runat="server" OnItemDataBound="rptOrderItems_ItemDataBound">
                             <ItemTemplate>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <asp:Image ID="imgProduct" runat="server" ImageUrl='<%# Eval("ImageUrl") %>' 
-                                            Width="50" Height="50" CssClass="me-2" />
+                                        <asp:Image ID="imgProduct" runat="server" CssClass="me-2" Width="50" Height="50" AlternateText='<%# Eval("ProductName") %>' />
                                         <div>
                                             <strong><%# Eval("ProductName") %></strong><br />
                                             <small class="text-muted">Qty: <%# Eval("Quantity") %></small>

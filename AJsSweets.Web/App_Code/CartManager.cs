@@ -17,17 +17,28 @@ public static class CartManager
         return cart;
     }
 
-    public static void AddItem(int productId, string productName, decimal unitPrice, int quantity)
+    public static void AddItem(int productId, string productName, decimal unitPrice, int quantity, string imageUrl = null)
     {
         var cart = GetCart();
         var existing = cart.FirstOrDefault(x => x.ProductId == productId);
         if (existing == null)
         {
-            cart.Add(new CartItem { ProductId = productId, ProductName = productName, UnitPrice = unitPrice, Quantity = quantity });
+            cart.Add(new CartItem
+            {
+                ProductId = productId,
+                ProductName = productName,
+                UnitPrice = unitPrice,
+                Quantity = quantity,
+                ImageUrl = imageUrl
+            });
         }
         else
         {
             existing.Quantity += quantity;
+            if (string.IsNullOrEmpty(existing.ImageUrl) && !string.IsNullOrEmpty(imageUrl))
+            {
+                existing.ImageUrl = imageUrl;
+            }
         }
     }
 

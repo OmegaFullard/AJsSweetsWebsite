@@ -43,7 +43,7 @@ public partial class Products : System.Web.UI.Page
                 if (item != null)
                 {
                     int qty = GetSelectedQuantity(productId);
-                    CartManager.AddItem(item.ProductId, item.ProductName, item.UnitPrice, qty);
+                    CartManager.AddItem(item.ProductId, item.ProductName, item.UnitPrice, qty, item.ImageUrl);
                     ShowSuccessMessage(item.ProductName);
                     selections[productId] = 1;
                     UpdateCartLink();

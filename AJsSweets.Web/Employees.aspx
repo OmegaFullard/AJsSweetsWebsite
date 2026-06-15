@@ -23,98 +23,99 @@
     </telerik:RadAjaxManager>
     <div>
         <telerik:RadDataForm ID="RadDataForm1" Skin="Glow" runat="server" DataKeyNames="EmployeeID" DataSourceID="SqlDataSource1">
-           <LayoutTemplate>
-        <div >
-            <div id="itemPlaceholder" runat="server"></div>
-        </div>
-               <div class="RadDataForm RadDataForm_<%# Container.Skin %> rdfLeftAligned rdfNoFieldHint">
-            <div id="Div1" runat="server">
-            </div>
-            <telerik:RadDataPager ID="RadDataPager1" runat="server" PagedControlID="RadDataForm1">
-                <Fields>
-                    <telerik:RadDataPagerButtonField FieldType="FirstPrev" />
-                    <telerik:RadDataPagerButtonField FieldType="NextLast" />
-                    <telerik:RadDataPagerTemplatePageField>
-                        <PagerTemplate>
-                            <div>
-                                <label>
-                                    Contact <strong>
-                                        <%#Container.Owner.StartRowIndex+1%></strong> of <strong>
-                                            <%# Container.Owner.TotalRowCount%></strong></label>
-                            </div>
-                        </PagerTemplate>
-                    </telerik:RadDataPagerTemplatePageField>
-                </Fields>
-            </telerik:RadDataPager>
-        </div>
-    </LayoutTemplate>
-    <ItemTemplate>
-        <fieldset class="rdfFieldset rdfBorders">
-             <div class="rdfRow">
-                <asp:Label runat="server" ID="lblEmployeeID" Text="Employee ID:"></asp:Label>
-                <asp:Label Text='<%# Eval("EmployeeID") %>' runat="server" ID="Label5" />
-            </div>
-             <div class="rdfRow">
-                <asp:Label runat="server" ID="lblTitle" Text="Job Title:"></asp:Label>
-                <asp:Label Text='<%# Eval("Title") %>' runat="server" ID="Label8" />
-            </div>
-             <div class="rdfRow">
-                <asp:Label runat="server" ID="lblSalary" Text="Salary:"></asp:Label>
-                <asp:Label Text='<%# Eval("Salary") %>' runat="server" ID="Label9" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblFN" Text="First Name:"></asp:Label>
-                <asp:Label Text='<%# Eval("First Name") %>' runat="server" ID="lbl2" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblLN" Text="Last Name:"></asp:Label>
-                <asp:Label Text='<%# Eval("Last Name") %>' runat="server" ID="lbl4" />
-            </div>
-             <div class="rdfRow">
-                <asp:Label runat="server" ID="lblDOB" Text="Date of Birth:"></asp:Label>
-                <asp:Label Text='<%# Eval("Date of Birth") %>' runat="server" ID="Label6" />
-            </div>
-             <div class="rdfRow">
-                <asp:Label runat="server" ID="lblStartDate" Text="Start Date:"></asp:Label>
-                <asp:Label Text='<%# Eval("Start Date") %>' runat="server" ID="Label7" />
-            </div> <div class="rdfRow">
-                <asp:Label runat="server" ID="lblStillEmployed" Text="Employment Status:"></asp:Label>
-                <asp:Label Text='<%# Eval("Still Employed") %>' runat="server" ID="Label10" />
-            </div>
+            <LayoutTemplate>
+                <div>
+                    <div id="itemPlaceholder" runat="server"></div>
+                </div>
+                <div class="RadDataForm RadDataForm_<%# Container.Skin %> rdfLeftAligned rdfNoFieldHint">
+                    <div id="Div1" runat="server">
+                    </div>
+                    <telerik:RadDataPager ID="RadDataPager1" runat="server" PagedControlID="RadDataForm1">
+                        <Fields>
+                            <telerik:RadDataPagerButtonField FieldType="FirstPrev" />
+                            <telerik:RadDataPagerButtonField FieldType="NextLast" />
+                            <telerik:RadDataPagerTemplatePageField>
+                                <PagerTemplate>
+                                    <div>
+                                        <label>
+                                            Contact <strong>
+                                                <%#Container.Owner.StartRowIndex+1%></strong> of <strong>
+                                                    <%# Container.Owner.TotalRowCount%></strong></label>
+                                    </div>
+                                </PagerTemplate>
+                            </telerik:RadDataPagerTemplatePageField>
+                        </Fields>
+                    </telerik:RadDataPager>
+                </div>
+            </LayoutTemplate>
+            <ItemTemplate>
+                <fieldset class="rdfFieldset rdfBorders">
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblEmployeeID" Text="Employee ID:"></asp:Label>
+                        <asp:Label Text='<%# Eval("EmployeeID") %>' runat="server" ID="Label5" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblTitle" Text="Job Title:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Title") %>' runat="server" ID="Label8" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblSalary" Text="Salary:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Salary") %>' runat="server" ID="Label9" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblFN" Text="First Name:"></asp:Label>
+                        <asp:Label Text='<%# Eval("First_Name") %>' runat="server" ID="lbl2" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblLN" Text="Last Name:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Last_Name") %>' runat="server" ID="lbl4" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblDOB" Text="Date of Birth:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Date_of_Birth") %>' runat="server" ID="Label6" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblStartDate" Text="Start Date:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Start_Date") %>' runat="server" ID="Label7" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblStillEmployed" Text="Employment Status:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Still_Employed") %>' runat="server" ID="Label10" />
+                    </div>
 
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblEmail" Text="Email Address:"></asp:Label>
-                <asp:Label Text='<%# Eval("Email Address") %>' runat="server" ID="lbl6" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblPhone" Text="Phone Number:"></asp:Label>
-                <asp:Label Text='<%# Eval("Phone") %>' runat="server" ID="lbl8" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblAddress" Text="Address:"></asp:Label>
-                <asp:Label Text='<%# Eval("Address") %>' runat="server" ID="lbl10" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblCity" Text="City:"></asp:Label>
-                <asp:Label Text='<%# Eval("City") %>' runat="server" ID="lbl12" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblState" Text="State:"></asp:Label>
-                <asp:Label Text='<%# Eval("State") %>' runat="server" ID="Label2" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblZip" Text="Zip:"></asp:Label>
-                <asp:Label Text='<%# Eval("Zip") %>' runat="server" ID="Label3" />
-            </div>
-            <div class="rdfRow">
-                <asp:Label runat="server" ID="lblCountry" Text="Country:"></asp:Label>
-                <asp:Label Text='<%# Eval("Country") %>' runat="server" ID="Label4" />
-            </div>
-        </fieldset>
-    </ItemTemplate>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblEmail" Text="Email Address:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Email_Address") %>' runat="server" ID="lbl6" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblPhone" Text="Phone Number:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Phone") %>' runat="server" ID="lbl8" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblAddress" Text="Address:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Address") %>' runat="server" ID="lbl10" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblCity" Text="City:"></asp:Label>
+                        <asp:Label Text='<%# Eval("City") %>' runat="server" ID="lbl12" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblState" Text="State:"></asp:Label>
+                        <asp:Label Text='<%# Eval("State") %>' runat="server" ID="Label2" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblZip" Text="Zip:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Zip") %>' runat="server" ID="Label3" />
+                    </div>
+                    <div class="rdfRow">
+                        <asp:Label runat="server" ID="lblCountry" Text="Country:"></asp:Label>
+                        <asp:Label Text='<%# Eval("Country") %>' runat="server" ID="Label4" />
+                    </div>
+                </fieldset>
+            </ItemTemplate>
         </telerik:RadDataForm>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>" SelectCommand="SELECT * FROM [Employees]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AJs_SweetsConnectionString %>" SelectCommand="SELECT * FROM [Employees]" ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
         <br />
         <br />
         <a href="Default.aspx"><< Back to Home</a><br />

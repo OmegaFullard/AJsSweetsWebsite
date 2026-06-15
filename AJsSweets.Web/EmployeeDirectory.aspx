@@ -19,8 +19,7 @@
             </div>
         </div>
 
-        <asp:GridView ID="gvEmployees" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-bordered" EmptyDataText="No employees found." DataSourceID="SqlDataSource1">
+        <asp:GridView ID="gvEmployees" runat="server" AutoGenerateColumns="True" CssClass="table table-striped table-bordered" EmptyDataText="No employees found.">
         </asp:GridView>
-        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:AJs_SweetsConnectionString2 %>' ProviderName='<%$ ConnectionStrings:AJs_SweetsConnectionString2.ProviderName %>' SelectCommand="SELECT [First_Name], [Last_Name], [Email_Address], [Phone], [EmployeeID], [Still_Employed], [Title], [Salary] FROM [Employees]"></asp:SqlDataSource>
     </div>
 </asp:Content>

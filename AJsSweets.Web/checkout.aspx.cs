@@ -57,6 +57,22 @@ public partial class Checkout : System.Web.UI.Page
         lblTotal.Text = total.ToString("C");
     }
 
+    protected void rptOrderItems_ItemDataBound(object sender, RepeaterItemEventArgs e)
+    {
+        if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+        {
+            var item = e.Item.DataItem as CartItem;
+            if (item != null)
+            {
+                var imgProduct = (System.Web.UI.WebControls.Image)e.Item.FindControl("imgProduct");
+                if (imgProduct != null)
+                {
+                    imgProduct.ImageUrl = ResolveUrl(item.ImageUrl ?? string.Empty);
+                }
+            }
+        }
+    }
+
     private void LoadCustomerInfo()
     {
         // If user is logged in, pre-fill their information

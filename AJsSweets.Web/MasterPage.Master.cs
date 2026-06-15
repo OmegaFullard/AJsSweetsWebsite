@@ -32,7 +32,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     // Helper method to add items to cart (delegates to CartManager for unified storage)
     public static void AddToCart(CartItem item)
     {
-        CartManager.AddItem(item.ProductId, item.ProductName, item.Price, item.Quantity);
+        CartManager.AddItem(item.ProductId, item.ProductName, item.Price, item.Quantity, item.ImageUrl);
     }
 
     // Helper method to remove items from cart

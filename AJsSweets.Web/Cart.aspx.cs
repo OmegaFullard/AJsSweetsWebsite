@@ -1,4 +1,3 @@
-using DocumentFormat.OpenXml.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,25 +20,29 @@ public partial class Cart : System.Web.UI.Page
             pnlCartItems.Visible = true;
             gvCart.DataSource = cartItems;
             gvCart.DataBind();
+            lblGrandTotal.Text = cartItems.Sum(item => item.LineTotal).ToString("C");
         }
         else
         {
             pnlEmptyCart.Visible = true;
             pnlCartItems.Visible = false;
+            lblGrandTotal.Text = string.Empty;
         }
     }
 
+
     protected void gvCart_RowDataBound(object sender, GridViewRowEventArgs e)
     {
-        if (e.Row.RowType == DataControlRowType.Footer)
+        if (e.Row.RowType == DataControlRowType.DataRow)
         {
-            List<CartItem> cartItems = CartManager.GetCart();
-            decimal grandTotal = cartItems.Sum(item => item.LineTotal);
-
-            Label lblGrandTotal = (Label)e.Row.FindControl("lblGrandTotal");
-            if (lblGrandTotal != null)
+            var item = e.Row.DataItem as CartItem;
+            if (item != null)
             {
-                lblGrandTotal.Text = grandTotal.ToString("C");
+                var imgProduct = (System.Web.UI.WebControls.Image)e.Row.FindControl("imgProduct");
+                if (imgProduct != null)
+                {
+                    imgProduct.ImageUrl = ResolveUrl(item.ImageUrl ?? string.Empty);
+                }
             }
         }
     }

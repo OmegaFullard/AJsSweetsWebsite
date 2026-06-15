@@ -28,26 +28,18 @@
                         </div>
                         <div class="card-body">
                             <asp:GridView ID="gvCart" runat="server" CssClass="table table-striped table-hover" 
-                                AutoGenerateColumns="false" OnRowCommand="gvCart_RowCommand" DataKeyNames="ProductId"
-                                ShowFooter="true" OnRowDataBound="gvCart_RowDataBound">
+                                AutoGenerateColumns="false" OnRowCommand="gvCart_RowCommand" OnRowDataBound="gvCart_RowDataBound" DataKeyNames="ProductId">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Product">
                                         <ItemTemplate>
                                             <div class="d-flex align-items-center">
-                                                <asp:Image ID="imgProduct" runat="server" 
-                                                    ImageUrl='<%# Eval("ImageUrl") %>' 
-                                                    CssClass="me-3" 
-                                                    Width="80" Height="80" 
-                                                    AlternateText='<%# Eval("ProductName") %>' />
+                                                <asp:Image ID="imgProduct" runat="server" CssClass="me-3" Width="80" Height="80" AlternateText='<%# Eval("ProductName") %>' />
                                                 <div>
                                                     <strong><%# Eval("ProductName") %></strong><br />
                                                     <small class="text-muted"><%# Eval("UnitDescription") %></small>
                                                 </div>
                                             </div>
                                         </ItemTemplate>
-                                        <FooterTemplate>
-                                            <strong>Total:</strong>
-                                        </FooterTemplate>
                                     </asp:TemplateField>
 
                                     <asp:BoundField DataField="UnitPrice" HeaderText="Price" 
@@ -55,7 +47,7 @@
 
                                     <asp:TemplateField HeaderText="Quantity">
                                         <ItemTemplate>
-                                            <div class="input-group" style="width: 130px;">
+                                            <div class="input-group" style="width:130px">
                                                 <asp:Button ID="btnDecrease" runat="server" Text="-" 
                                                     CssClass="btn btn-outline-secondary btn-sm" 
                                                     CommandName="Decrease" 
@@ -64,7 +56,7 @@
                                                     Text='<%# Eval("Quantity") %>' 
                                                     CssClass="form-control form-control-sm text-center" 
                                                     ReadOnly="true" 
-                                                    style="width: 50px;" />
+                                                    style="width:50px" />
                                                 <asp:Button ID="btnIncrease" runat="server" Text="+" 
                                                     CssClass="btn btn-outline-secondary btn-sm" 
                                                     CommandName="Increase" 
@@ -72,24 +64,20 @@
                                             </div>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    
+
                                     <asp:TemplateField HeaderText="Total">
                                         <ItemTemplate>
                                             <span class="text-end d-block"><%# Eval("LineTotal", "{0:C}") %></span>
                                         </ItemTemplate>
-                                        <FooterTemplate>
-                                            <strong><asp:Label ID="lblGrandTotal" runat="server" CssClass="text-end d-block"></asp:Label></strong>
-                                        </FooterTemplate>
                                     </asp:TemplateField>
-                                    
+
                                     <asp:TemplateField HeaderText="Action">
                                         <ItemTemplate>
                                             <asp:Button ID="btnRemove" runat="server" 
                                                 Text="Remove" 
                                                 CssClass="btn btn-danger btn-sm" 
                                                 CommandName="Remove" 
-                                                CommandArgument='<%# Eval("ProductId") %>'
-                                                OnClientClick="return confirm('Are you sure you want to remove this item?');" />
+                                                CommandArgument='<%# Eval("ProductId") %>' />
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
@@ -99,6 +87,9 @@
                                     </div>
                                 </EmptyDataTemplate>
                             </asp:GridView>
+                            <div class="text-end mt-3">
+                                <strong>Total: <asp:Label ID="lblGrandTotal" runat="server" CssClass="text-end d-block"></asp:Label></strong>
+                            </div>
                         </div>
                     </div>
 
@@ -108,8 +99,7 @@
                                 <i class="fa fa-arrow-left"></i> Continue Shopping
                             </a>
                             <asp:Button ID="btnClearCart" runat="server" Text="Clear Cart" 
-                                CssClass="btn btn-outline-danger" OnClick="btnClearCart_Click" 
-                                OnClientClick="return confirm('Are you sure you want to clear your cart?');" />
+                                CssClass="btn btn-outline-danger" OnClick="btnClearCart_Click" />
                         </div>
                         <div class="col-md-6 text-end">
                             <asp:Button ID="btnCheckout" runat="server" Text="Proceed to Checkout" 
