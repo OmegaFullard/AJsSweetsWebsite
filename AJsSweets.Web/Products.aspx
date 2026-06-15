@@ -83,7 +83,7 @@
                                 </div>
                                 <br />
                                 <br />
-                                <div class="d-grid gap-2">
+                                <div class="d-flex gap-2 justify-content-center">
                                     <asp:Button ID="btnAddToCart" runat="server" Text="Add to Cart"
                                         CssClass="btn btn-primary"
                                         CommandName="Add"
@@ -94,8 +94,6 @@
                                         CommandName="Cancel"
                                         CommandArgument='<%# Eval("ProductId") %>'
                                         CausesValidation="false" />
-                                    <br />
-                                    <br />
                                 </div>
                             </div>
                         </div>

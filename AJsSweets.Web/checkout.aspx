@@ -232,9 +232,9 @@
                                         <div>
                                             <strong><%# Eval("ProductName") %></strong><br />
                                             <small class="text-muted">Qty: <%# Eval("Quantity") %></small>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <span class="text-end"><%# Eval("TotalPrice", "{0:C}") %></span>
+                                        <span class="text-end"><%# Eval("LineTotal", "{0:C}") %></span>
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>

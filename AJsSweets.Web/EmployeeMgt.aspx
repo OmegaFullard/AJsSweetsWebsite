@@ -35,12 +35,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <label>Employee ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
                                         <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
+                                      
+                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="80px" Height="45px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
                                     </div>
                                 </div>
                             </div>
@@ -54,15 +55,14 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-4 mx-auto">
+                        <div class="d-flex gap-2">
                                 <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
                          <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="100px" Height="50px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
                 
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="100px" Height="50px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
                     
-                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="150px" Height="25px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
+                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="100px" Height="50px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
                      
                          </telerik:CardActionsContainerComponent>
                         </div>

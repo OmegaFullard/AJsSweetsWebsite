@@ -10,7 +10,7 @@
 
       <div class="row">
          <div class="col-md-5">
-            <div class="card">
+           
                <div class="card-body">
                   </div>
                   </div>
@@ -60,7 +60,15 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row">
+           
+                   <div class="row">
+                         <div class="col-md-4">
+   <label>City</label>
+   <div class="form-group">
+      <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="City"></asp:TextBox>
+   </div>
+</div>
+                
                      <div class="col-md-4">
                         <label>State</label>
                         <div class="form-group">
@@ -119,12 +127,8 @@
                            </asp:DropDownList>
                         </div>
                      </div>
-                     <div class="col-md-4">
-                        <label>City</label>
-                        <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="City"></asp:TextBox>
-                        </div>
-                     </div>
+                       
+                     
                      <div class="col-md-4">
                         <label>Pincode</label>
                         <div class="form-group">
@@ -151,58 +155,50 @@
                         <label>Customer ID</label>
   
                          <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Customer ID" ReadOnly="True"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="ID" ReadOnly="True"></asp:TextBox>
                              </div>
                          </div>
                        <div class="col-md-4">
                              <label>Old Password</label>
                              <div class="form-group">
-                                 <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email-ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                 <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                              </div>
                               </div>
 
                       <div class="col-md-4">
                              <label>New Password</label>
                              <div class="form-group">
-                                 <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email-ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                 <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                              </div>
                           </div>
                       <br />
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-6">
                             <div class="form-group">
                       
-                              <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
-                           <br />
+                            <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Width="150px" Height="50px" style="color: #85A4BC; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
+                             <br />
+  <br />
                             </div>
                         </div>
                      </div>
-                     
+                     </div>
                   </div>
-                  <div class="row">
-                     <div class="col-8 mx-auto">
-                           <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
-                         <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
-                     
-                              
-                     
-                  
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
-                    
-                    
-                 
-                          
-                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="150px" Height="25px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
-                     
-                         </telerik:CardActionsContainerComponent>
-                        
-                         </div>
+          <br />
+          <br />
+             <br />
+             <br />
+                  <div class="d-flex gap-2">
+                     <asp:Button ID="Button2" class="btn btn-lg btn-success" runat="server" Width="150px" Height="50px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
+                     <asp:Button ID="Button3" class="btn btn-lg btn-warning" runat="server" Width="150px" Height="50px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
+                     <asp:Button ID="Button4" class="btn btn-lg btn-danger" runat="server" Width="150px" Height="50px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
                   </div>
-               </div>
+              
             </div>
                   </div>
-                  </div>
+       <br />
+       <br />
+                  
             <a href="Default.aspx"><< Back to Home</a><br />
             <br/>
       

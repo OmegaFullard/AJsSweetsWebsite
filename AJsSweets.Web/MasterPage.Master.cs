@@ -16,74 +16,41 @@ public partial class MasterPage : System.Web.UI.MasterPage
     }
     private int GetCartItemCount()
     {
-        // Check if cart exists in session
-        if (Session["CartItems"] != null)
+        var cartItems = CartManager.GetCart();
+        if (cartItems != null && cartItems.Count > 0)
         {
-            var cartItems = Session["CartItems"] as System.Collections.Generic.List<CartItem>;
-            if (cartItems != null)
+            int totalQuantity = 0;
+            foreach (var item in cartItems)
             {
-                // Return total quantity of all items
-                int totalQuantity = 0;
-                foreach (var item in cartItems)
-                {
-                    totalQuantity += item.Quantity;
-                }
-                return totalQuantity;
+                totalQuantity += item.Quantity;
             }
+            return totalQuantity;
         }
         return 0;
     }
 
-    // Helper method to add items to cart (can be called from other pages)
+    // Helper method to add items to cart (delegates to CartManager for unified storage)
     public static void AddToCart(CartItem item)
     {
-        var cartItems = HttpContext.Current.Session["CartItems"] as System.Collections.Generic.List<CartItem>;
-
-        if (cartItems == null)
-        {
-            cartItems = new System.Collections.Generic.List<CartItem>();
-            HttpContext.Current.Session["CartItems"] = cartItems;
-        }
-
-        // Check if item already exists in cart
-        var existingItem = cartItems.Find(i => i.ProductId == item.ProductId);
-        if (existingItem != null)
-        {
-            // Update quantity
-            existingItem.Quantity += item.Quantity;
-        }
-        else
-        {
-            // Add new item
-            cartItems.Add(item);
-        }
-
-        HttpContext.Current.Session["CartItems"] = cartItems;
+        CartManager.AddItem(item.ProductId, item.ProductName, item.Price, item.Quantity);
     }
 
     // Helper method to remove items from cart
     public static void RemoveFromCart(int productId)
     {
-        var cartItems = HttpContext.Current.Session["CartItems"] as System.Collections.Generic.List<CartItem>;
-
-        if (cartItems != null)
-        {
-            cartItems.RemoveAll(i => i.ProductId == productId);
-            HttpContext.Current.Session["CartItems"] = cartItems;
-        }
+        CartManager.RemoveItem(productId);
     }
 
     // Helper method to clear cart
     public static void ClearCart()
     {
-        HttpContext.Current.Session["CartItems"] = null;
+        CartManager.Clear();
     }
 
     // Helper method to get cart items
-    public static System.Collections.Generic.List<CartItem> GetCartItems()
+    public static System.Collections.Generic.List<global::CartItem> GetCartItems()
     {
-        var cartItems = HttpContext.Current.Session["CartItems"] as System.Collections.Generic.List<CartItem>;
-        return cartItems ?? new System.Collections.Generic.List<CartItem>();
+        return CartManager.GetCart();
     }
 
 

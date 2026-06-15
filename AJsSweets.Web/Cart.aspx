@@ -41,7 +41,7 @@
                                                     AlternateText='<%# Eval("ProductName") %>' />
                                                 <div>
                                                     <strong><%# Eval("ProductName") %></strong><br />
-                                                    <small class="text-muted"><%# Eval("Description") %></small>
+                                                    <small class="text-muted"><%# Eval("UnitDescription") %></small>
                                                 </div>
                                             </div>
                                         </ItemTemplate>
@@ -49,10 +49,10 @@
                                             <strong>Total:</strong>
                                         </FooterTemplate>
                                     </asp:TemplateField>
-                                    
-                                    <asp:BoundField DataField="Price" HeaderText="Price" 
+
+                                    <asp:BoundField DataField="UnitPrice" HeaderText="Price" 
                                         DataFormatString="{0:C}" ItemStyle-CssClass="text-end" />
-                                    
+
                                     <asp:TemplateField HeaderText="Quantity">
                                         <ItemTemplate>
                                             <div class="input-group" style="width: 130px;">
@@ -75,7 +75,7 @@
                                     
                                     <asp:TemplateField HeaderText="Total">
                                         <ItemTemplate>
-                                            <span class="text-end d-block"><%# Eval("TotalPrice", "{0:C}") %></span>
+                                            <span class="text-end d-block"><%# Eval("LineTotal", "{0:C}") %></span>
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <strong><asp:Label ID="lblGrandTotal" runat="server" CssClass="text-end d-block"></asp:Label></strong>

@@ -33,26 +33,38 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Customer ID"></asp:TextBox>
-                              <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="150px" Height="25px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
-                           </div>
+                              
+                               <br />
+                               <br />
+                               </div>
+                                <asp:Button class="btn btn-primary" ID="Button1" runat="server" Width="200px" Height="40px" style="color: #85a4bc; background-color: #333399; border: medium solid #C0C0C0" Text="Go" />
+                          
                         </div>
+                           <br />
+  <br />
+                        
                      </div>
+                    
+                      <div class="row">
                      <div class="col-md-4">
                         <label>Full Name</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Full Name" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
+                     
                      <div class="col-md-4">
+                        
                         <label>Account Status</label>
                         <div class="form-group">
                            <div class="input-group">
-                              <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
+                              <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Status" ReadOnly="True"></asp:TextBox>
                               
                            </div>
                         </div>
                      </div>
                   </div>
+                      </div>
                   <div class="row">
                      <div class="col-md-3">
                         <label>DOB</label>
@@ -61,9 +73,9 @@
                         </div>
                      </div>
                      <div class="col-md-3">
-                        <label>Contact Number</label>
+                        <label>Phone</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Contact No" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Phone" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-3">
@@ -101,22 +113,30 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row">
-                        <div class="col-4 mx-auto">
+
+                   <br />
+                   <br />
+                   <br />
+                  <div class="d-flex gap-2">
                      <telerik:CardSeparatorComponent runat="server"></telerik:CardSeparatorComponent>
                          <telerik:CardActionsContainerComponent runat="server" CardActionsAlignment="Stretched" Orientation="Vertical">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="150px" Height="25px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Width="100px" Height="50px" style="color: #2d283d; background-color: #088f8f; border: medium solid #C0C0C0" Text="Add" />
      
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="150px" Height="25px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Width="100px" Height="50px" style="color: #66b8d1; background-color: #4800ff; border: medium solid #C0C0C0" Text="Update" />
                                  
-                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="150px" Height="25px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
+                        <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Width="100px" Height="50px" style="color: #ffffff; background-color: #ff0000; border: medium solid #C0C0C0" Text="Delete" />
                      
                          </telerik:CardActionsContainerComponent>
                      </div>   
                   </div>
                </div>
             </div>
-            <a href="Default.aspx"><< Back to Home</a><br/>
+          <br />
+          <br />
+           <br />
+ <br />
+            <a href="Default.aspx"><< Back to Home</a>
+          <br/>
             <br/>
          </div>
          <div class="col-md-4">
@@ -143,5 +163,5 @@
             </div>
          </div>
       </div>
-   </div>
+   
     </asp:Content>
