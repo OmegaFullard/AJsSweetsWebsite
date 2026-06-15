@@ -38,7 +38,7 @@
         </div>
 
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <center><h1><p>Sweets and Treats: "Let us satisfy your sweettooth"</p></h1></center>
+            <center><h1>Sweets and Treats: "Let us satisfy your sweettooth"</h1></center>
             <p class="text-muted mb-0">Browse each product card to view the image, description, price, and adjust the quantity before adding items to your cart.</p>
         </div>
     

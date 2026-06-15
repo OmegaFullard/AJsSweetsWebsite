@@ -1,10 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
-<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>            
+                    
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJs Sweets</title>
+
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
@@ -12,22 +17,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
     <link rel="manifest" href="/site.webmanifest"/>
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
-
     <meta name="msapplication-TileColor" content="#854bd1"/>
     <meta name="theme-color" content="#ffffff"/>
-    <title>AJs Sweets</title>
-    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
     <webopt:bundlereference runat="server" path="~/Content/css" />
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/"/>
+    <%-- Bootstrap 5 bundle includes Popper for dropdown support --%>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
 
     <link href="App_Themes/Page.css" rel="stylesheet" />
     <link href="App_Themes/dropdowns.css" rel="stylesheet" />
@@ -37,19 +36,113 @@
     <link href="App_Themes/sign-in.css" rel="stylesheet" />
     <link href="App_Themes/checkout.css" rel="stylesheet" />
     <link href="App_Themes/carousel.css" rel="stylesheet" />
-    <link href="App_Themes/checkout.css" rel="stylesheet" />
     <link href="App_Themes/styles.css" rel="stylesheet" />
-
-    <link href="http://localhost:64954/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://localhost:64954/Content/DataTables/css/dataTables.jqueryui.min.css" rel="stylesheet" />
-    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
-    <link href="http://localhost:64954/css/font-awesome.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    <script src="http://localhost:64954/Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="http://localhost:64954/Scripts/popper.min.js"></script>
-    <script src="http://localhost:64954/Scripts/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .site-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+            box-sizing: border-box;
+        }
+
+        /* Top bar: search + cart */
+        .top-bar {
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .top-bar-inner {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .site-footer .social-icons a {
+            margin: 0 6px;
+            font-size: 1.4rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .top-bar-inner {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .top-bar-inner .form-control {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .site-wrapper {
+                padding: 0 8px;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 991px) {
+            .top-bar-inner .form-control {
+                max-width: 180px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .top-bar-inner .form-control {
+                max-width: 260px;
+            }
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+    </style>
 
     <script>
         $(document).ready(function () {
@@ -65,14 +158,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <%-- Add your form content here --%>
-          <div class="col-12 col-s-9">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            </Scripts>
+        </asp:ScriptManager>
 
-        <div class="header">
-       <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
-           </div>
-
-    <div class="container-fluid py-2">
+ <div class="container-fluid py-2">
         <div class="d-flex justify-content-end align-items-center flex-wrap gap-2">
             <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Search..." MaxLength="100" style="max-width: 240px;"></asp:TextBox>
             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-outline-primary" OnClick="btnSearch_Click" />
@@ -86,205 +186,120 @@
         </div>
     </div>
 
-          <!-- Main Nav -->
-  <div class="topnav menu">
-        <asp:Menu ID="NavigationMenu" runat="server" CssClass="topnav" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" EnableScreenBoundaryDetection="true">
-           <Items>
-<asp:MenuItem NavigateUrl="Default.aspx" Text="Home" />
+               <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="site-wrapper w-100">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<asp:MenuItem Text="Shop">
-    <asp:MenuItem Text="Products" NavigateUrl="Products.aspx" />
-    <asp:MenuItem Text="Pricing" NavigateUrl="Pricing.aspx" />
-    <asp:MenuItem Text="Cart" NavigateUrl="Cart.aspx" />
-    <asp:MenuItem Text="Checkout" NavigateUrl="checkout.aspx" />
-</asp:MenuItem>
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav">
 
-<asp:MenuItem Text="Account">
-    <asp:MenuItem Text="Login" NavigateUrl="Login.aspx" />
-    <asp:MenuItem Text="Register" NavigateUrl="UserRegistration.aspx" />
-    <asp:MenuItem Text="Profile" NavigateUrl="UserViewProfile.aspx" />
-</asp:MenuItem>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Default.aspx">Home</a>
+                        </li>
 
-<asp:MenuItem Text="Admin">
-    <asp:MenuItem Text="Admin Login" NavigateUrl="AdminLogin.aspx" />
-    <asp:MenuItem Text="Admin Registration" NavigateUrl="AdminRegistration.aspx" />
-    <asp:MenuItem Text="Customer Management" NavigateUrl="CustomerMgt.aspx" />
-    <asp:MenuItem Text="Employee Management" NavigateUrl="EmployeeMgt.aspx" />
-</asp:MenuItem>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Products.aspx">Products</a></li>
+                                <li><a class="dropdown-item" href="Pricing.aspx">Pricing</a></li>
+                                <li><a class="dropdown-item" href="Cart.aspx">Cart</a></li>
+                                <li><a class="dropdown-item" href="checkout.aspx">Checkout</a></li>
+                            </ul>
+                        </li>
 
-<asp:MenuItem Text="Information">
-    <asp:MenuItem Text="About" NavigateUrl="About.aspx" />
-    <asp:MenuItem Text="Directions" NavigateUrl="Directions.aspx" />
-    <asp:MenuItem Text="Contact" NavigateUrl="Contact.aspx" />
-    <asp:MenuItem Text="Employees" NavigateUrl="EmployeeDirectory.aspx" />
-    <asp:MenuItem Text="Social Media" NavigateUrl="SocialMedia.aspx" />
-    <asp:MenuItem Text="Support" NavigateUrl="Support.aspx" />
-<asp:MenuItem Text="Privacy Policy" NavigateUrl="Privacy.aspx" />
-<asp:MenuItem Text="Terms and Conditions" NavigateUrl="Terms.aspx" />
-</asp:MenuItem>
-</Items>
-        </asp:Menu>
-</div>
-       </div>
-    <br />
-            <br />     
-        
-        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Login.aspx">Login</a></li>
+                                <li><a class="dropdown-item" href="UserRegistration.aspx">Register</a></li>
+                                <li><a class="dropdown-item" href="UserViewProfile.aspx">Profile</a></li>
+                            </ul>
+                        </li>
 
-					   
-        <div class="container">
-    <!-- Main Content -->
-    <div class="row">
-        <div class="col-md-10 col-sm-12">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="AdminLogin.aspx">Admin Login</a></li>
+                                <li><a class="dropdown-item" href="AdminRegistration.aspx">Admin Registration</a></li>
+                                <li><a class="dropdown-item" href="CustomerMgt.aspx">Customer Management</a></li>
+                                <li><a class="dropdown-item" href="EmployeeMgt.aspx">Employee Management</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Information</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="About.aspx">About</a></li>
+                                <li><a class="dropdown-item" href="Directions.aspx">Directions</a></li>
+                                <li><a class="dropdown-item" href="Contact.aspx">Contact</a></li>
+                                <li><a class="dropdown-item" href="EmployeeDirectory.aspx">Employees</a></li>
+                                <li><a class="dropdown-item" href="SocialMedia.aspx">Social Media</a></li>
+                                <li><a class="dropdown-item" href="Support.aspx">Support</a></li>
+                                <li><a class="dropdown-item" href="Privacy.aspx">Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="Terms.aspx">Terms and Conditions</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-     <br />
+        </nav>
 
-       <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+        <!-- Main Content -->
+        <div class="site-wrapper main-content">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+        <!-- MainContent Placeholder (for pages using MainContent) -->
+        <header data-bs-theme="dark">
+            <div class="collapse text-bg-dark" id="navbarHeader"></div>
+            <div class="site-wrapper">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <hr />
+                <div class="b-example-divider"></div>
+            </div>
+        </header>
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
-
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0="16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
-   
-    
-<header data-bs-theme="dark">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-      </div>
- <div class="container body-content">
-     <asp:ContentPlaceHolder ID="MainContent" runat="server">
-     </asp:ContentPlaceHolder>
-     <hr />
-     <div class="b-example-divider"></div>
-</div>
-      </header>
-
-  <div class="card-footer text-muted">
-     
-
-             <center>  <p><strong>Please be sure to follow us on Social Media!</strong></p>
-            <br /> 
-                  <center><a href="SocialMedia.aspx" class="btn btn-primary">Follow Us!</a>  </center>
-                 <br />
-            <div style="height: 66px">
+        <!-- Footer -->
+        <div class="site-footer">
+            <div class="site-wrapper">
+                <p><strong>Please be sure to follow us on Social Media!</strong></p>
+                <a href="SocialMedia.aspx" class="btn btn-primary">Follow Us!</a>
+                <br /><br />
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
                 <br />
-
-            <!-- Add font awesome icons -->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
-
+                <hr />
+                <p>&copy; 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080</p>
+            </div>
         </div>
-<br />
-                   <!-- Footer -->
-    <div class="row">
-        <div class="col-md-12">
-            <hr />
-	
-                <p>© 2008- AJ's Sweets, 123 Treats Rd., Atlanta, GA 30080</p>
-        </div>
-    </div>
-</div>
-        <!-- End of form content -->
+         https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
     </form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
