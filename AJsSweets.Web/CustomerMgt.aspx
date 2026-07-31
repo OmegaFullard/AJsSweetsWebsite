@@ -49,13 +49,13 @@
                      <div class="col-md-4">
                         <label>Full Name</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Full Name" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Name" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      
                      <div class="col-md-4">
                         
-                        <label>Account Status</label>
+                        <label>Status</label>
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Status" ReadOnly="True"></asp:TextBox>
@@ -75,13 +75,13 @@
                      <div class="col-md-3">
                         <label>Phone</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Phone" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Ph" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-3">
                         <label>Email ID</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email ID" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -101,7 +101,7 @@
                      <div class="col-md-3">
                         <label>Pin Code</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox11" runat="server" placeholder="Pin Code" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox11" runat="server" placeholder="Pin" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                   </div>
