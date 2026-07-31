@@ -12,7 +12,7 @@
                 <td><%# string.Format("{0:C}", Eval("Price")) %></td>
                 <td>
                     <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" CommandName="Add"
-                        CommandArgument='<%# Eval("ProductId") + "|" + Eval("ProductName") + "|" + Eval("Price") %>' CssClass="btn btn-primary btn-sm" />
+                        CommandArgument='<%# Eval("ProductId") + "|" + Eval("ProductName") + "|" + Eval("Price") + "|" + Eval("ImageUrl") %>' CssClass="btn btn-primary btn-sm" />
                 </td>
             </tr>
         </ItemTemplate>

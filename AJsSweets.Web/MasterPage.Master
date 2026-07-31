@@ -45,6 +45,14 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            justify-content: flex-start;
+            align-items: stretch;
+            max-width: none;
+            margin: 0;
+        }
+
+        #form1 {
+            width: 100%;
         }
 
         .site-wrapper {

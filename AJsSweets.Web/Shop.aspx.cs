@@ -13,7 +13,7 @@ public partial class Shop : System.Web.UI.Page
     private void BindProducts()
     {
         using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["AJs_SweetsConnectionString"].ConnectionString))
-        using (var cmd = new SqlCommand("SELECT ProductId, ProductName, Price FROM dbo.Products WHERE IsActive = 1 ORDER BY ProductName", con))
+        using (var cmd = new SqlCommand("SELECT ProductId, ProductName, Price, ImageUrl FROM dbo.Products WHERE IsActive = 1 ORDER BY ProductName", con))
         using (var da = new SqlDataAdapter(cmd))
         {
             var dt = new DataTable();
@@ -31,8 +31,9 @@ public partial class Shop : System.Web.UI.Page
         int productId = Convert.ToInt32(parts[0]);
         string productName = parts[1];
         decimal price = Convert.ToDecimal(parts[2]);
+        string imageUrl = parts.Length > 3 ? parts[3] : string.Empty;
 
-        CartManager.AddItem(productId, productName, price, 1);
+        CartManager.AddItem(productId, productName, price, 1, imageUrl);
         lblMsg.Text = "Item added to cart.";
     }
 }

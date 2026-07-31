@@ -52,11 +52,11 @@
                 </div>
 
                 <div class="scroll-container">
-                    <img src="images/oreocheesecake.png" style="width: 350px; height: 250px; object-fit: cover;" alt="Oreo Cheesecake"/>
-                    <img src="images/strawcake.png" style="width: 350px; height: 250px; object-fit: cover;" alt="Strawberry Cake"/>
+                    <img src="images/oreocheesecake.png" style="width: 150px; height: 150px; object-fit: cover;" alt="Oreo Cheesecake"/>
+                    <img src="images/strawcake.png" style="width: 150px; height: 150px; object-fit: cover;" alt="Strawberry Cake"/>
                     <br />
                     <br />
-                    <img src="images/oatmealraisin.png" style="width: 350px; height: 250px; object-fit: cover;" alt="Oatmeal Raisin Cookies"/>
+                    <img src="images/oatmealraisin.png" style="width: 150px; height: 150px; object-fit: cover;" alt="Oatmeal Raisin Cookies"/>
                 </div>
 
                 <br />
